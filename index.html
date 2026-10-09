@@ -1,530 +1,837 @@
-<!DOCTYPE html>
-<html class="h-full" lang="en" style="">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="web_standard" name="shell-type">
-  <title>Viral Impressions | Alabama &amp; Mississippi Small Business Marketing &amp; Web Design</title>
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-  <style>
-    @layer base { 
-      html, body { margin: 0; padding: 0; } 
-      body { overscroll-behavior: none; } 
-      main > :first-child { margin-top: 0 !important; } 
-      main > :last-child { margin-bottom: 0 !important; } 
-    } 
-    ::-webkit-scrollbar { display: none; }
-  </style>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script id="tailwind-config">
-    tailwind.config = {darkMode: "class", theme: {extend: {colors: {"secondary-fixed-dim": "#ffb5a0", background: "#faf8ff", "surface-dim": "#d2d9f4", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#862200", "on-secondary": "#ffffff", "error-container": "#ffdad6", "secondary-fixed": "#ffdbd1", tertiary: "#004e47", "tertiary-container": "#00685f", secondary: "#b02f00", "primary-fixed-dim": "#b7c4ff", "on-primary": "#ffffff", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#dae2fd", "on-tertiary-container": "#7be7d9", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "inverse-primary": "#b7c4ff", "surface-bright": "#faf8ff", "on-tertiary-fixed": "#00201d", outline: "#747686", "surface-container-highest": "#dae2fd", primary: "#0037b0", "on-primary-fixed": "#001551", "on-primary-fixed-variant": "#0039b5", "outline-variant": "#c4c5d7", "primary-fixed": "#dce1ff", "primary-container": "#1d4ed8", "on-secondary-container": "#541100", error: "#ba1a1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#3b0900", "inverse-surface": "#283044", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#005049", "secondary-container": "#ff5722", "on-surface-variant": "#434655", "on-tertiary": "#ffffff", surface: "#faf8ff", "tertiary-fixed-dim": "#6bd8cb", "surface-tint": "#2151da", "tertiary-fixed": "#89f5e7", "on-primary-container": "#cad3ff"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-md": "1rem", "gutter-lg": "2rem", "gutter-sm": "1rem", gutter: "1.5rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-lg": "3rem", margin: "1.5rem"}, fontFamily: {"body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Plus Jakarta Sans"], label: ["Plus Jakarta Sans"]}, fontSize: {"body-sm": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "headline-sm": ["20px", {lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600"}], "display-xl-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], "display-lg": ["44px", {lineHeight: "52px", letterSpacing: "-0.025em", fontWeight: "700"}], "body-lg": ["18px", {lineHeight: "28px", letterSpacing: "0em", fontWeight: "400"}], "display-lg-mobile": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700"}], "headline-lg-mobile": ["24px", {lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}], "body-md": ["16px", {lineHeight: "24px", letterSpacing: "0em", fontWeight: "400"}], "title-lg": ["18px", {lineHeight: "26px", letterSpacing: "0em", fontWeight: "600"}]}}}};
-  </script>
-</head>
-<body class="min-h-full bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed relative">
-  
-  <!-- MOBILE MENU OVERLAY -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-md hidden flex-col pt-24 px-margin-sm pb-8 overflow-y-auto">
-    <nav class="flex flex-col gap-6 items-center text-center">
-      <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Services</a>
-      <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Custom Portals &amp; Web</a>
-      <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Full-Funnel Ads</a>
-      <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Transparent ROI</a>
-      <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Pricing</a>
-      
-      <div class="w-16 border-t-2 border-surface-container-highest my-2"></div>
-      
-      <div class="flex flex-col gap-2">
-        <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Direct Access</span>
-        <a class="font-headline-md text-headline-md text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a>
-        <span class="font-label-sm text-label-sm text-outline flex items-center justify-center gap-space-xs mt-1">
-          <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat
-        </span>
-      </div>
-      
-      <a class="mt-4 inline-flex items-center justify-center w-full max-w-xs px-space-lg py-4 bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary transition-all" href="#audit-form" onclick="toggleMobileMenu()">Get a Free Growth Audit</a>
-    </nav>
-  </div>
+<!DOCTYPE html><html class="h-full" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Viral Impressions | Alabama &amp; Mississippi Small Business Marketing &amp; Web Design</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"secondary-fixed-dim": "#ffb5a0", background: "#faf8ff", "surface-dim": "#d2d9f4", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#862200", "on-secondary": "#ffffff", "error-container": "#ffdad6", "secondary-fixed": "#ffdbd1", tertiary: "#004e47", "tertiary-container": "#00685f", secondary: "#b02f00", "primary-fixed-dim": "#b7c4ff", "on-primary": "#ffffff", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#dae2fd", "on-tertiary-container": "#7be7d9", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "inverse-primary": "#b7c4ff", "surface-bright": "#faf8ff", "on-tertiary-fixed": "#00201d", outline: "#747686", "surface-container-highest": "#dae2fd", primary: "#0037b0", "on-primary-fixed": "#001551", "on-primary-fixed-variant": "#0039b5", "outline-variant": "#c4c5d7", "primary-fixed": "#dce1ff", "primary-container": "#1d4ed8", "on-secondary-container": "#541100", error: "#ba1a1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#3b0900", "inverse-surface": "#283044", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#005049", "secondary-container": "#ff5722", "on-surface-variant": "#434655", "on-tertiary": "#ffffff", surface: "#faf8ff", "tertiary-fixed-dim": "#6bd8cb", "surface-tint": "#2151da", "tertiary-fixed": "#89f5e7", "on-primary-container": "#cad3ff"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-md": "1rem", "gutter-lg": "2rem", "gutter-sm": "1rem", gutter: "1.5rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-lg": "3rem", margin: "1.5rem"}, fontFamily: {"body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Plus Jakarta Sans"], label: ["Plus Jakarta Sans"]}, fontSize: {"body-sm": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "headline-sm": ["20px", {lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600"}], "display-xl-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], "display-lg": ["44px", {lineHeight: "52px", letterSpacing: "-0.025em", fontWeight: "700"}], "body-lg": ["18px", {lineHeight: "28px", letterSpacing: "0em", fontWeight: "400"}], "display-lg-mobile": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700"}], "headline-lg-mobile": ["24px", {lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}], "body-md": ["16px", {lineHeight: "24px", letterSpacing: "0em", fontWeight: "400"}], "title-lg": ["18px", {lineHeight: "26px", letterSpacing: "0em", fontWeight: "600"}]}}}};</script></head><body class="min-h-full bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 
-  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-    <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-      <div class="h-20 flex items-center justify-between gap-space-md">
-        <div class="flex items-center gap-space-md shrink-0">
-          <a class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="#">
-            <img alt="Viral Impressions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm">
-            <div class="flex flex-col hidden xs:flex">
-              <span class="font-title-lg text-title-lg text-on-surface tracking-tight leading-none group-hover:text-primary transition-colors">Viral Impressions</span>
-              <span class="text-[11px] font-normal leading-tight text-outline tracking-wider uppercase mt-0.5">Preservative <br>Restoration &amp; Design</span>
-            </div>
-          </a>
-        </div>
-        
-        <nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="text-primary font-bold bg-surface-container-high rounded-full px-space-md py-space-xs">
-          <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="services" href="#">Services</a>
-          <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="custom-portals-and-web" href="#">Custom Portals &amp; Web</a>
-          <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="full-funnel-ads" href="#">Full-Funnel Ads</a>
-          <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="transparent-roi" href="#">Transparent ROI</a>
-          <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="pricing" href="#">Pricing</a>
-        </nav>
-        
-        <div class="flex items-center gap-2 sm:gap-space-md shrink-0">
-          <div class="hidden lg:flex flex-col items-end text-right">
-            <a class="font-label-md text-label-md text-on-surface hover:text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a>
-            <span class="font-label-sm text-label-sm text-outline flex items-center gap-space-xs">
-              <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat
-            </span>
-          </div>
-          <!-- Hidden on md screens to prevent crowding with the hamburger menu -->
-          <a class="hidden md:inline-flex items-center justify-center px-space-lg py-space-sm bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary hover:text-on-secondary transition-all transform hover:-translate-y-0.5 active:translate-y-0" data-path="free-growth-audit" href="#audit-form">Get a Free Growth Audit</a>
-          
-          <a class="focus:outline-none hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all border border-surface-container-highest" data-path="client-services" href="#" title="Client Services &amp; Shared Drives">
-            <span class="material-symbols-outlined text-primary text-[18px]">folder_shared</span>
-            <span class="hidden sm:inline font-semibold text-primary">Client Services</span>
-          </a>
-          
-          <!-- MOBILE MENU BUTTON -->
-          <button onclick="toggleMobileMenu()" class="xl:hidden p-2 text-on-surface rounded-md hover:bg-surface-container-low transition-colors focus:outline-none">
-            <span id="mobile-menu-icon" class="material-symbols-outlined text-[28px]">menu</span>
-          </button>
-        </div>
-      </div>
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-md hidden flex-col pt-24 px-margin-sm pb-8 overflow-y-auto">
+  <nav class="flex flex-col gap-6 items-center text-center">
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Services</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Custom Portals &amp; Web</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Full-Funnel Ads</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Transparent ROI</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="#" onclick="toggleMobileMenu()">Pricing</a>
+    
+    <div class="w-16 border-t-2 border-surface-container-highest my-2"></div>
+    
+    <div class="flex flex-col gap-2">
+      <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Direct Access</span>
+      <a class="font-headline-md text-headline-md text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a>
+      <span class="font-label-sm text-label-sm text-outline flex items-center justify-center gap-space-xs mt-1">
+        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat
+      </span>
     </div>
-  </header>
+    
+    <a class="mt-4 inline-flex items-center justify-center w-full max-w-xs px-space-lg py-4 bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary transition-all" href="#audit-form" onclick="toggleMobileMenu()">Get a Free Growth Audit</a>
+    
+    <a class="mt-2 inline-flex items-center justify-center w-full max-w-xs px-space-lg py-4 bg-surface-container text-on-surface rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-all" href="#" onclick="toggleMobileMenu()">
+      <span class="material-symbols-outlined text-primary text-[18px] mr-2">folder_shared</span> Client Services
+    </a>
+  </nav>
+</div>
 
-  <main class="flex-1 w-full pt-20 bg-background">
-    <div class="flex flex-col w-full">
-      <!-- SECTION 1: HERO -->
-      <section class="relative w-full bg-surface-container-lowest overflow-hidden py-space-xl lg:py-24">
-        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#0037b0 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg relative z-10">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
-            <div class="lg:col-span-7 flex flex-col gap-space-md">
-              <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high w-fit">
-                <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
-                <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">FOUNDED BY 20+ YEARs of INDUSTRY experience</span>
-              </div>
-              <h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight leading-[1.08]">
-                Real leads, clean design, and measurable revenue for <span class="text-primary-container">Alabama &amp; Mississippi</span> small businesses.
-              </h1>
-              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                Partner with two seasoned strategists bringing enterprise-grade marketing engines and graphic design to Alabama and Mississippi small businesses — without coastal agency markups or junior interns.
-              </p>
-              <div class="mt-space-sm p-2 rounded-xl bg-surface-container-low shadow-sm max-w-xl">
-                <form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); document.getElementById('hero-scan-msg').classList.remove('hidden');">
-                  <div class="relative flex-1">
-                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">language</span>
-                    <input class="w-full pl-10 pr-3 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="Enter business domain or Facebook URL" required="" type="text">
-                  </div>
-                  <button class="px-space-lg py-3 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md whitespace-nowrap shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-2" type="submit">
-                    <span class="">Request A Free Audit</span>
-                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-                  </button>
-                </form>
-                <div class="hidden mt-2 p-2 bg-surface-container text-on-surface-variant rounded font-body-sm text-body-sm flex items-center gap-2" id="hero-scan-msg">
-                  <span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
-                  <span class="">Running instant mobile speed &amp; local search benchmark for AL &amp; MS markets... Compiling below.</span>
-                </div>
-              </div>
-              <div class="flex flex-wrap items-center gap-4 pt-space-sm text-on-surface-variant">
-                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">lock_clock</span><span class="font-body-sm text-body-sm font-semibold">Zero Long-Term Lock-Ins</span></div>
-                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">person_check</span><span class="font-body-sm text-body-sm font-semibold">Direct Access to Founders</span></div>
-                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span><span class="font-body-sm text-body-sm font-semibold">20+ Years Combined Expertise</span></div>
-              </div>
-            </div>
-            <div class="lg:col-span-5 relative">
-              <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-xl relative overflow-hidden">
-                <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 pb-space-md">
-                  <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">VI</div>
-                    <div>
-                      <div class="font-title-lg text-title-lg text-on-surface leading-tight">The Benchmark Growth Model</div>
-                      <div class="font-label-sm text-label-sm text-outline">Standard Performance Target Architecture</div>
-                    </div>
-                  </div>
-                  <span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Launch Baseline</span>
-                </div>
-                <div class="grid grid-cols-1 xs:grid-cols-2 gap-3 py-space-sm">
-                  <div class="bg-surface-container-low rounded-lg p-3"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Managed Monthly Spend</span><span class="font-headline-md text-headline-md text-on-surface font-extrabold block mt-1">$200 – $2M+</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-[14px]">verified</span> Proven media scale</span></div>
-                  <div class="bg-surface-container-low rounded-lg p-3"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Target Baseline CPA</span><span class="font-headline-md text-headline-md text-on-surface font-extrabold block mt-1">$18.40</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-[14px]">trending_up</span> Cost control discipline</span></div>
-                </div>
-                <div class="mt-space-md p-3 rounded-lg bg-surface-container">
-                  <div class="flex justify-between items-center mb-2"><span class="font-label-sm text-label-sm text-on-surface font-bold">Target Lead Ramp Velocity</span><span class="font-label-sm text-label-sm text-primary font-bold">3.5x – 5.0x Target ROAS</span></div>
-                  <svg class="w-full h-16 text-primary-container" fill="none" stroke="currentColor" viewBox="0 0 320 80"><path d="M 0,65 L 40,58 L 80,62 L 120,45 L 160,40 L 200,28 L 240,32 L 280,15 L 320,10" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><path d="M 0,65 L 40,58 L 80,62 L 120,45 L 160,40 L 200,28 L 240,32 L 280,15 L 320,10 L 320,80 L 0,80 Z" fill="currentColor" fill-opacity="0.08"></path></svg>
-                  <div class="flex justify-between text-outline font-label-sm text-label-sm pt-1"><span class="">Launch</span><span class="">Week 2</span><span class="">Week 4</span><span class="">Maturity</span></div>
-                </div>
-                <div class="mt-space-md flex flex-wrap items-center justify-between gap-2 text-outline font-body-sm text-body-sm">
-                  <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary-container text-[18px]">verified_user</span> Google Economic Benchmark</span>
-                  <span class="font-label-sm text-label-sm text-on-surface font-bold">Tracked &amp; Verified</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg"><div class="h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="#"><img alt="Viral Impressions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm"><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface tracking-tight leading-none group-hover:text-primary transition-colors">Viral Impressions</span><span class="text-[11px] font-normal leading-tight text-outline tracking-wider uppercase mt-0.5">Preservative <br>Restoration &amp; Design LLC</span></div></a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="text-primary font-bold bg-surface-container-high rounded-full px-space-md py-space-xs"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="services" href="#">Services</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="custom-portals-and-web" href="#">Custom Portals &amp; Web</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="full-funnel-ads" href="#">Full-Funnel Ads</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="transparent-roi" href="#">Transparent ROI</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="pricing" href="#">Pricing</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex flex-col items-end text-right"><a class="font-label-md text-label-md text-on-surface hover:text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a><span class="font-label-sm text-label-sm text-outline flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat</span></div><a class="hidden md:inline-flex items-center justify-center px-space-lg py-space-sm bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary hover:text-on-secondary transition-all transform hover:-translate-y-0.5 active:translate-y-0" data-path="free-growth-audit" href="#audit-form">Get a Free Growth Audit</a><a class="hidden sm:inline-flex focus:outline-none items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all border border-surface-container-highest" data-path="client-services" href="#" title="Client Services &amp; Shared Drives"><span class="material-symbols-outlined text-primary text-[18px]">folder_shared</span><span class="hidden sm:inline font-semibold text-primary">Client Services</span></a><button onclick="toggleMobileMenu()" class="xl:hidden p-2 text-on-surface hover:bg-surface-container-low rounded-md transition-colors focus:outline-none"><span id="mobile-menu-icon" class="material-symbols-outlined text-[28px]">menu</span></button></div></div></div></header><main class="flex-1 w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden py-space-xl lg:py-24">
+<!-- Subtle technical dot grid pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#0037b0 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Hero Left Column: Proposition & Audit Box -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high w-fit"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">FOUNDED BY 20+ YEARs of INDUSTRY experience</span></div>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight leading-[1.08]">
+            Real leads, clean design, and measurable revenue for <span class="text-primary-container">Alabama &amp; Mississippi</span> small businesses.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Partner with two seasoned strategists bringing enterprise-grade marketing engines and graphic design to Alabama and Mississippi small businesses — without coastal agency markups or junior interns.</p>
+<!-- Interactive Domain Quick-Scan Bar -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container-low shadow-sm max-w-xl">
+<form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); document.getElementById('hero-scan-msg').classList.remove('hidden');">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">language</span>
+<input class="w-full pl-10 pr-3 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="Enter your business domain or Facebook URL" required="" type="text">
+</div>
+<button class="px-space-lg py-3 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md whitespace-nowrap shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-2" type="submit">
+<span class="">Request A Free Audit</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<div class="hidden mt-2 p-2 bg-surface-container text-on-surface-variant rounded font-body-sm text-body-sm flex items-center gap-2" id="hero-scan-msg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="">Running instant mobile speed &amp; local search benchmark for AL &amp; MS markets... Compiling below.</span>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center gap-space-lg pt-space-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">lock_clock</span><span class="font-body-sm text-body-sm font-semibold">Zero Long-Term Lock-Ins</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">person_check</span><span class="font-body-sm text-body-sm font-semibold">Direct Access to Founders</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span><span class="font-body-sm text-body-sm font-semibold">20+ Years Combined Expertise</span></div></div>
+</div>
+<!-- Hero Right Column: Graphic Metric Card Mockup -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-xl relative overflow-hidden"><div class="flex items-center justify-between pb-space-md"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">VI</div><div><div class="font-title-lg text-title-lg text-on-surface leading-tight">The Benchmark Growth Model</div><div class="font-label-sm text-label-sm text-outline">Standard Performance Target Architecture</div></div></div><span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Launch Baseline</span></div><div class="grid grid-cols-2 gap-3 py-space-sm"><div class="bg-surface-container-low rounded-lg p-3"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Managed&nbsp; Monthly Spend</span><span class="font-headline-md text-headline-md text-on-surface font-extrabold block mt-1">$200 – $2M+</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-[14px]">verified</span> Proven media scale</span></div><div class="bg-surface-container-low rounded-lg p-3"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Target Baseline CPA (Including Niche kpis)</span><span class="font-headline-md text-headline-md text-on-surface font-extrabold block mt-1">$18.40</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-[14px]">trending_up</span> Cost control discipline</span></div></div><div class="mt-space-md p-3 rounded-lg bg-surface-container"><div class="flex justify-between items-center mb-2"><span class="font-label-sm text-label-sm text-on-surface font-bold">Target Lead Ramp Velocity</span><span class="font-label-sm text-label-sm text-primary font-bold">3.5x – 5.0x Target ROAS</span></div><svg class="w-full h-16 text-primary-container" fill="none" stroke="currentColor" viewBox="0 0 320 80"><path d="M 0,65 L 40,58 L 80,62 L 120,45 L 160,40 L 200,28 L 240,32 L 280,15 L 320,10" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><path d="M 0,65 L 40,58 L 80,62 L 120,45 L 160,40 L 200,28 L 240,32 L 280,15 L 320,10 L 320,80 L 0,80 Z" fill="currentColor" fill-opacity="0.08"></path></svg><div class="flex justify-between text-outline font-label-sm text-label-sm pt-1"><span class="">Launch</span><span class="">Week 2</span><span class="">Week 4</span><span class="">Maturity</span></div></div><div class="mt-space-md flex flex-wrap items-center justify-between text-outline font-body-sm text-body-sm gap-2"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary-container text-[18px]">verified_user</span> Google Economic Benchmark</span><span class="font-label-sm text-label-sm text-on-surface font-bold">Tracked &amp; Verified with Weekly Client Syncs</span></div></div>
+<!-- Secondary Overlapping Pill Card -->
 
-      <!-- SECTION 2: SOCIAL PROOF / LOCAL FOOTPRINT -->
-      <section class="w-full bg-surface-container-low py-space-xl">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
-            <div>
-              <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold block mb-1">Industry Expertise &amp; Regional Focus</span>
-              <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">Enterprise-grade performance built for Alabama &amp; Mississippi.</h2>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-              Founded by senior digital marketing directors with 20+ years of combined experience stewarding ad budgets from $1,000 to $2,000,000+ per month. We bring proven, data-backed growth frameworks to local businesses with zero guesswork.
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SOCIAL PROOF / LOCAL FOOTPRINT -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg"><div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold block mb-1">Industry Expertise &amp; Regional Focus</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">Enterprise-grade performance built for Alabama &amp; Mississippi.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+Founded by senior digital marketing directors with 20+ years of combined experience stewarding ad budgets from $1,000 to $2,000,000+ per month. We bring proven, data-backed growth frameworks to local businesses with zero guesswork.
+</p>
+</div>
+
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-space-lg">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">BHM HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Birmingham, AL</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Central AL Market</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Full Market Coverage</span>
+</div>
+
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">JAN HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Jackson, MS</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Central MS Market</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Local Search &amp; Ads</span>
+</div>
+
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">HSV HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Huntsville, AL</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">North AL Tech Corridor</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">High-Intent Targeting</span>
+</div>
+
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">GPT HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Gulfport-Biloxi, MS</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Coastal Commercial Area</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Local Service Ads</span>
+</div>
+
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">MOB HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Mobile, AL</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Port &amp; Mobile Bay Region</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Full-Funnel Capture</span>
+</div>
+
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm font-bold uppercase">TUP HUB</span>
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="my-2">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">Tupelo &amp; The Shoals Area</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">North MS &amp; NW AL Commercial Hub</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Regional Domination</span>
+</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Google &amp; Meta Benchmark</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Economic Impact Data</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">+130% Average ROAS</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-4">Intent-driven local search capture converts high-urgency customers when attribution and landing experiences are dialed in. Verified benchmarks show structured ad engines reliably drive $2 in gross return for every $1 deployed.</div>
+</div>
+<div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
+<span class="">Google Economic Research</span>
+<span class="text-tertiary font-bold">High-Intent Search</span>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Leadership Experience</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Cross-Platform Depth</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">$200 to $2M+ / mo Managed</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-4">From lean local service launches to multi-million dollar regional and national growth budgets, our frameworks eliminate wasted ad spend through strict negative keyword sculpting and conversion rate optimization.</div>
+</div>
+<div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
+<span class="">Senior Veteran Direction</span>
+<span class="text-tertiary font-bold">20+ Yrs Combined Leadership</span>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Niche KPI-Specifics &amp; Tracking Integration</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Engineered Infrastructure</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">+200% Conversion Lift</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-4">Sub-2-second speed, streamlined mobile booking, and automated CRM integrations consistently outperform generic template sites, turning regional web visitors into verified phone calls and booked revenue.</div>
+</div>
+<div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
+<span class="">CRO &amp; Custom Web Portals</span>
+<span class="text-tertiary font-bold">Sub-2s Speed Standards</span>
+</div>
+</div>
+</div></div>
+</section>
+<!-- SECTION 3: FULL SPECTRUM SERVICES (Warm Clean Canvas) -->
+<section class="w-full bg-[#FAFAF9] py-space-xl lg:py-24">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest font-extrabold">End-To-End Execution</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">Four core growth pillars. Zero vendor juggling.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          We bring engineering precision and clean aesthetics under one roof. No outsourcing overseas, no hand-waving consultants.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg">
+<!-- Pillar 1: Custom Web & Portals -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[28px]">devices</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Pillar 01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Custom Web &amp; Client Portals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Fast, responsive websites built with speed, accessibility, and high conversion at their core. We engineer custom client login areas, instant estimate builders, and seamless scheduling engines that hook directly into your CRM.
             </p>
+<ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Sub-second page speeds (&lt; 95+ Google PageSpeed score)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Self-service customer scheduling &amp; invoice portals</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Direct sync with Jobber, Housecall Pro, Clio, and HubSpot</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Average build: 3-4 Weeks</span>
+<a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">
+              Explore Portal Specs <span class="material-symbols-outlined text-[16px]">east</span>
+</a>
+</div>
+</div>
+<!-- Pillar 2: Creative Design Studio -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Pillar 02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Creative Design Studio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Stand out in traffic, on the showroom floor, and across the social feed. High-converting creative assets crafted by professional senior designers who know what resonates with regional Southern audiences.
+            </p>
+<ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">High-CTR Meta &amp; TikTok video/static ad collateral</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Fleet vehicle wrap vector kits &amp; site signage</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Complete logo identity systems &amp; brand guidelines</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">100% Vector &amp; Print-Ready</span>
+<a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">
+              View Design Kit <span class="material-symbols-outlined text-[16px]">east</span>
+</a>
+</div>
+</div>
+<!-- Pillar 3: Full-Funnel Paid Ads -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Pillar 03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Full-Funnel Paid Advertising</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Capture high-intent searches the exact moment a hot water heater bursts or a client needs legal counsel. Hyper-targeted geographic campaigns with strict negative keyword pruning to eliminate wasted spend.
+            </p>
+<ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Google Local Service Ads (Google Screened &amp; Guaranteed)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Granular neighborhood zip-code geofencing across AL &amp; MS</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Retargeting pools that re-engage lost website visitors</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Daily Bid Calibration</span>
+<a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">
+              Explore Ad Channels <span class="material-symbols-outlined text-[16px]">east</span>
+</a>
+</div>
+</div>
+<!-- Pillar 4: Down-Funnel KPI & Attribution -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[28px]">query_stats</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Pillar 04</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Down-Funnel Attribution &amp; Tracking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Stop guessing which marketing effort actually brought in the cash. We implement dynamic call tracking, recorded qualified leads, form submission attribution, and live dashboards that connect directly to your bottom line.
+            </p>
+<ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Dynamic call tracking with lead audio recording reviews</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Clear cost-per-qualified-lead (CPQL) reporting</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Automated weekly executive email summaries</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Transparent Numbers Always</span>
+<a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#analytics-demo">
+              See Live Demo Below <span class="material-symbols-outlined text-[16px]">east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: INTERACTIVE DOWN-FUNNEL ANALYTICS DEMO (Ice Blue Canvas #EFF6FF) -->
+<section class="w-full bg-[#EFF6FF] py-space-xl lg:py-24" id="analytics-demo">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl"><div class=""><span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider block mb-1">Transparent Reporting Infrastructure</span><h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">Interactive Reporting: What We Track From Day 1</h2></div><div class="inline-flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm text-outline font-label-sm text-label-sm shrink-0"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="">Sample Client Portal View — Real-time call tracking &amp; lead verification engine</span></div></div>
+<!-- Realistic Interactive Dashboard Shell -->
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden border border-surface-container"><div class="bg-[#F8FAFC] border-b border-surface-container px-4 py-3 flex flex-wrap items-center justify-between gap-3"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-[14px] shadow-sm"><span class="material-symbols-outlined text-[20px]">bar_chart</span></div><div class="flex flex-col"><div class="flex flex-wrap items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-bold">Alabama &amp; Mississippi Regional Client Performance Overview</span><span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold text-[11px]">LIVE TEMPLATE</span></div><div class="flex flex-wrap items-center gap-2 text-outline font-label-sm text-label-sm text-[12px]"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Looker Studio Engine</span><span class="">•</span><span class="">Auto-refreshed 4 mins ago</span></div></div></div><div class="flex flex-wrap items-center gap-2"><div class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-surface-container text-on-surface font-label-sm text-label-sm shadow-sm"><span class="material-symbols-outlined text-[16px] text-primary">description</span><span class="">Page 1 of 3: Executive Summary</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><div class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-surface-container text-on-surface font-label-sm text-label-sm shadow-sm"><span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span><span class="">Date range: Last 30 days</span></div><div class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm"><span class="material-symbols-outlined text-[16px]">share</span><span class="">Share / Export</span></div><button class="p-1.5 rounded-lg hover:bg-surface-container text-outline transition-colors"><span class="material-symbols-outlined text-[20px]">more_vert</span></button></div></div><div class="bg-[#F1F5F9] border-b border-surface-container px-4 py-2.5 flex flex-wrap items-center justify-between gap-3 text-on-surface font-body-sm text-body-sm"><div class="flex flex-wrap items-center gap-2"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold mr-1 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">filter_alt</span> Dimension Filters:</span><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest border border-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer shadow-sm"><span class="text-outline">Market:</span><span class="font-semibold">All (AL &amp; MS)</span><span class="material-symbols-outlined text-[14px] text-outline">arrow_drop_down</span></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest border border-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer shadow-sm"><span class="text-outline">Channel:</span><span class="font-semibold">Google LSA, Meta, Local Pack</span><span class="material-symbols-outlined text-[14px] text-outline">arrow_drop_down</span></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest border border-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer shadow-sm"><span class="text-outline">Lead Status:</span><span class="font-semibold">Qualified / Booked</span><span class="material-symbols-outlined text-[14px] text-outline">arrow_drop_down</span></div></div><div class="flex items-center gap-3 font-label-sm text-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> 100% Data Freshness</span><button class="hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">refresh</span> Reset Filters</button></div></div><div class="p-space-md lg:p-space-lg bg-[#FAFAF9]"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-space-lg"><div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm flex flex-col justify-between"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[12px]">Qualified Inquiries</span><span class="material-symbols-outlined text-[16px]">info</span></div><div class="font-headline-lg text-headline-lg text-on-surface font-extrabold my-1">164</div><div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">arrow_upward</span><span class="">+24.2%</span><span class="text-outline font-normal text-[12px]">vs previous 30 days</span></div></div><div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm flex flex-col justify-between"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[12px]">Cost Per Acquisition (CPA)</span><span class="material-symbols-outlined text-[16px]">trending_down</span></div><div class="font-headline-lg text-headline-lg text-primary font-extrabold my-1">$18.40</div><div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">arrow_downward</span><span class="">-12.8%</span><span class="text-outline font-normal text-[12px]">vs previous 30 days</span></div></div><div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm flex flex-col justify-between"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[12px]">Tracked Inbound Calls</span><span class="material-symbols-outlined text-[16px]">phone_in_talk</span></div><div class="font-headline-lg text-headline-lg text-on-surface font-extrabold my-1">118</div><div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">arrow_upward</span><span class="">+18.5%</span><span class="text-outline font-normal text-[12px]">vs previous 30 days</span></div></div><div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm flex flex-col justify-between"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[12px]">Blended Pipeline ROAS</span><span class="material-symbols-outlined text-[16px]">monitoring</span></div><div class="font-headline-lg text-headline-lg text-tertiary font-extrabold my-1">4.8x</div><div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">arrow_upward</span><span class="">+0.6x</span><span class="text-outline font-normal text-[12px]">vs previous 30 days</span></div></div></div><div class="rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm overflow-hidden"><div class="px-4 py-3 bg-[#F8FAFC] border-b border-surface-container flex flex-wrap items-center justify-between gap-2"><div class="flex flex-wrap items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-bold">Verified Lead Audio &amp; Attribution Table</span><span class="text-outline text-[12px]">(Google Ads &amp; Meta API Sync)</span></div><div class="flex items-center gap-2 text-outline font-label-sm text-label-sm text-[12px]"><span class="">Sorted by: Est. Project Value (Desc)</span><span class="material-symbols-outlined text-[16px]">sort</span></div></div><div class="overflow-x-auto"><table class="w-full text-left font-body-sm text-body-sm"><thead class="bg-[#F1F5F9] border-b border-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider text-[11px]"><tr><th class="py-3 px-4 font-bold cursor-pointer hover:text-primary"><div class="flex items-center gap-1"><span class="">Time &amp; Source (Dimension)</span><span class="material-symbols-outlined text-[14px]">unfold_more</span></div></th><th class="py-3 px-4 font-bold cursor-pointer hover:text-primary"><div class="flex items-center gap-1"><span class="">Caller Market (Dimension)</span><span class="material-symbols-outlined text-[14px]">unfold_more</span></div></th><th class="py-3 px-4 font-bold cursor-pointer hover:text-primary"><div class="flex items-center gap-1"><span class="">Call Duration</span><span class="material-symbols-outlined text-[14px]">unfold_more</span></div></th><th class="py-3 px-4 font-bold">Intent Classification</th><th class="py-3 px-4 font-bold cursor-pointer hover:text-primary"><div class="flex items-center gap-1"><span class="">Est. Pipeline Value</span><span class="material-symbols-outlined text-[14px] text-primary">arrow_downward</span></div></th><th class="py-3 px-4 text-right font-bold">Pipeline Status</th></tr></thead><tbody class="divide-y divide-surface-container text-on-surface"><tr class="hover:bg-surface-container-low transition-colors"><td class="py-3 px-4 font-semibold flex items-center gap-2 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="">Yesterday, 02:14 PM · Google LSA</span></td><td class="py-3 px-4 text-on-surface-variant whitespace-nowrap">Tuscaloosa, AL (205)</td><td class="py-3 px-4 font-medium whitespace-nowrap">6m 05s</td><td class="py-3 px-4 font-semibold text-primary whitespace-nowrap">Multi-Family HVAC Replacement</td><td class="py-3 px-4"><div class="flex items-center gap-2"><span class="font-bold text-on-surface">$18,800</span><div class="w-16 bg-surface-container rounded-full h-1.5 hidden sm:block overflow-hidden"><div class="bg-tertiary h-1.5 rounded-full" style="width: 100%;"></div></div></div></td><td class="py-3 px-4 text-right whitespace-nowrap"><span class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Contract Executed</span></td></tr><tr class="hover:bg-surface-container-low transition-colors"><td class="py-3 px-4 font-semibold flex items-center gap-2 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="">Today, 11:42 AM · Google LSA</span></td><td class="py-3 px-4 text-on-surface-variant whitespace-nowrap">Jackson, MS (601)</td><td class="py-3 px-4 font-medium whitespace-nowrap">5m 48s</td><td class="py-3 px-4 font-semibold text-primary whitespace-nowrap">Commercial TPO Roof Leak</td><td class="py-3 px-4"><div class="flex items-center gap-2"><span class="font-bold text-on-surface">$14,500</span><div class="w-16 bg-surface-container rounded-full h-1.5 hidden sm:block overflow-hidden"><div class="bg-tertiary h-1.5 rounded-full" style="width: 77%;"></div></div></div></td><td class="py-3 px-4 text-right whitespace-nowrap"><span class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span></td></tr><tr class="hover:bg-surface-container-low transition-colors"><td class="py-3 px-4 font-semibold flex items-center gap-2 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="">Today, 09:15 AM · Local Pack</span></td><td class="py-3 px-4 text-on-surface-variant whitespace-nowrap">Birmingham, AL (205)</td><td class="py-3 px-4 font-medium whitespace-nowrap">3m 12s</td><td class="py-3 px-4 font-semibold text-primary whitespace-nowrap">Residential Shingle Inspection</td><td class="py-3 px-4"><div class="flex items-center gap-2"><span class="font-bold text-on-surface">$8,200</span><div class="w-16 bg-surface-container rounded-full h-1.5 hidden sm:block overflow-hidden"><div class="bg-tertiary h-1.5 rounded-full" style="width: 44%;"></div></div></div></td><td class="py-3 px-4 text-right whitespace-nowrap"><span class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span></td></tr><tr class="hover:bg-surface-container-low transition-colors"><td class="py-3 px-4 font-semibold flex items-center gap-2 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="">Yesterday, 04:30 PM · Meta Retarget</span></td><td class="py-3 px-4 text-on-surface-variant whitespace-nowrap">Hattiesburg, MS (601)</td><td class="py-3 px-4 font-medium whitespace-nowrap">4m 02s</td><td class="py-3 px-4 font-semibold text-primary whitespace-nowrap">Gutter &amp; Storm Repair</td><td class="py-3 px-4"><div class="flex items-center gap-2"><span class="font-bold text-on-surface">$3,100</span><div class="w-16 bg-surface-container rounded-full h-1.5 hidden sm:block overflow-hidden"><div class="bg-primary h-1.5 rounded-full" style="width: 17%;"></div></div></div></td><td class="py-3 px-4 text-right whitespace-nowrap"><span class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold">Follow-Up Sent</span></td></tr></tbody></table></div><div class="px-4 py-2.5 bg-[#F8FAFC] border-t border-surface-container flex flex-wrap items-center justify-between text-outline font-label-sm text-label-sm text-[12px] gap-2"><div class="flex items-center gap-2"><span class="">Showing 1 – 4 of 24 records</span><span class="text-surface-container">|</span><span class="text-tertiary font-semibold">100% HIPAA &amp; Privacy Compliant</span></div><div class="flex items-center gap-1"><button class="p-1 rounded hover:bg-surface-container disabled:opacity-30" disabled=""><span class="material-symbols-outlined text-[18px]">chevron_left</span></button><span class="font-bold text-on-surface px-1">1</span><button class="p-1 rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button></div></div></div></div></div>
+</div>
+</section>
+<!-- SECTION 5: WHY CHOOSE US (Side-by-Side Comparison on White Canvas) -->
+<section class="w-full bg-surface-container-lowest py-space-xl lg:py-24">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-extrabold">The Viral Impressions Difference</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">Built to fix everything wrong with agency retainers.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          We compared our operational model directly against the coastal firms who ignore you and the unvetted freelancers who ghost you.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg items-stretch">
+<!-- Column 1: Big Coast Agency -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-2 font-bold">Option A</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Big Coastal Agency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Expensive retainers with junior interns running your local ads.</p>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">$6,000 to $12,000 monthly minimum fees</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">Rigid 12-month lock-in contracts</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">Zero knowledge of Alabama &amp; Mississippi dynamics</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">Vague "brand awareness" vanity metrics</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-3 rounded-lg bg-surface-container text-outline font-label-sm text-label-sm text-center">
+            Result: High overhead, sluggish pace
           </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-space-lg">
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">BHM HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Birmingham, AL</div><div class="font-body-sm text-body-sm text-on-surface-variant">Central AL Market</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">Full Market Coverage</span>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">JAN HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Jackson, MS</div><div class="font-body-sm text-body-sm text-on-surface-variant">Central MS Market</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">Local Search &amp; Ads</span>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">HSV HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Huntsville, AL</div><div class="font-body-sm text-body-sm text-on-surface-variant">North AL Tech Corridor</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">High-Intent Targeting</span>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">GPT HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Gulfport-Biloxi, MS</div><div class="font-body-sm text-body-sm text-on-surface-variant">Coastal Commercial Area</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">Local Service Ads</span>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">MOB HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Mobile, AL</div><div class="font-body-sm text-body-sm text-on-surface-variant">Port &amp; Mobile Bay Region</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">Full-Funnel Capture</span>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-bold uppercase">TUP HUB</span><span class="material-symbols-outlined text-primary text-[18px]">location_on</span></div>
-              <div class="my-2"><div class="font-title-lg text-title-lg text-on-surface font-bold">Tupelo &amp; Shoals</div><div class="font-body-sm text-body-sm text-on-surface-variant">North MS &amp; NW AL Hub</div></div>
-              <span class="font-label-sm text-label-sm text-tertiary font-bold">Regional Domination</span>
-            </div>
+</div>
+<!-- Column 2: Cheap Freelancers -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-2 font-bold">Option B</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Cheap Freelancer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Inconsistent availability and disconnected patchwork tools.</p>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">Unpredictable turnaround and ghosting</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">No full-funnel tracking or verified CRM hookup</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">Single skill set (can't do code + ad strategy + print)</span>
+</div>
+<div class="flex items-start gap-2 text-outline">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span class="">No strategic accountability for revenue results</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-3 rounded-lg bg-surface-container text-outline font-label-sm text-label-sm text-center">
+            Result: Wasted time, fragile solutions
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-            <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex flex-wrap items-center gap-2 mb-3">
-                  <span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Google &amp; Meta Benchmark</span>
-                  <span class="text-tertiary font-label-sm text-label-sm font-bold">Economic Impact</span>
-                </div>
-                <div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">+130% Average ROAS</div>
-                <div class="font-body-sm text-body-sm text-on-surface-variant mb-4">Intent-driven local search capture converts high-urgency customers when attribution and landing experiences are dialed in.</div>
-              </div>
-              <div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
-                <span class="">Google Economic Research</span>
-                <span class="text-tertiary font-bold">High-Intent Search</span>
-              </div>
+</div>
+<!-- Column 3: Viral Impressions (Elevated Card) -->
+<div class="p-space-lg rounded-xl bg-surface-container-high shadow-lg flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 right-0 bg-secondary-container text-on-secondary px-3 py-1 rounded-bl-lg font-label-sm text-label-sm font-extrabold uppercase">Recommended</div><div class=""><div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2 font-bold mt-4 md:mt-0">The Smart Choice</div><h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-extrabold">Viral Impressions</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Senior partners delivering tier-one strategy directly to your business.</p><div class="space-y-3 font-body-sm text-body-sm"><div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">Direct founders handling your account (no junior account managers)</span></div><div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">20+ years combined industry track record &amp; technical depth</span></div><div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">Managed budgets from $1k to $2M/month across competitive markets</span></div><div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">Predictable month-to-month retainers with zero long-term lock-ins</span></div></div></div><div class="mt-space-lg p-3 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold text-center">Result: Senior execution, predictable ROI</div></div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: TRANSPARENT PRICING TIERS (#F8FAFC) -->
+<section class="w-full bg-[#F8FAFC] py-space-xl lg:py-24" id="pricing">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl"><span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-extrabold">Flexible &amp; Modular Services</span><h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">Full-spectrum digital marketing tailored to your growth goals.</h2><p class="font-body-md text-body-md text-on-surface-variant mt-3">No rigid one-size-fits-all contracts or blind retainer fees. Choose individual service packages built for Alabama &amp; Mississippi small businesses, or bundle multi-service engagements to save 15% across your total scope.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg items-stretch"><!-- Package 1: Brand Identity & Creative Design --><div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"><div><div class="inline-flex px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold uppercase mb-4">Visual Impact &amp; Collateral</div><h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-2">Brand Identity &amp; Creative Design</h3><div class="mb-3"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider block">Custom Scoped / Retainer or Project-Based</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Full-spectrum graphic design and brand assets crafted for local resonance. Turn heads in traffic and across social feeds.</p><div class="space-y-3 font-body-sm text-body-sm mb-space-lg"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Complete logo identity systems &amp; brand guidelines</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">High-CTR Meta &amp; TikTok video/static ad creative</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Fleet vehicle wrap vector kits &amp; on-site job signage</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Print collateral, sales leave-behinds &amp; trade banners</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Scalable vector graphic asset libraries</span></div></div></div><a class="w-full py-3 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold text-center hover:bg-surface-container transition-all block mt-4" href="#audit-form">Explore Creative Packages</a></div><!-- Package 2: Campaign Creation & Down-Funnel Tracking (Featured) --><div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-xl flex flex-col justify-between relative overflow-hidden"><div class="bg-primary text-on-primary text-center py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider -mx-space-xl -mt-space-xl mb-6">Core Growth Engine</div><div><div class="inline-flex px-2.5 py-1 rounded-full bg-surface-container-high text-secondary-container font-label-sm text-label-sm font-bold uppercase mb-4">Performance Ads &amp; Attribution</div><h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-2">Campaign Creation &amp; Down-Funnel Tracking</h3><div class="mb-3"><span class="font-label-sm text-label-sm font-bold text-secondary-container uppercase tracking-wider block">Tailored to Monthly Ad Spend</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">High-intent customer capture across Google LSA, Search, and Meta with transparent down-funnel tracking down to the recorded phone call.</p><div class="space-y-3 font-body-sm text-body-sm mb-space-md"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Google Search, Maps &amp; LSA (Google Screened/Guaranteed) setup</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Multi-channel Meta retargeting &amp; geo-fenced county campaigns</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Dynamic call recording, verified lead classification &amp; CRM intake</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Live executive reporting dashboard (CPA, ROAS, pipeline value)</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Daily bid calibration &amp; negative keyword pruning</span></div></div><div class="p-3 rounded-lg bg-surface-container-low border border-surface-container mb-space-md"><div class="flex items-start gap-2 text-on-surface font-body-sm text-body-sm"><span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">palette</span><span class=""><strong class="text-on-surface font-semibold">Creative Production Add-On:</strong> Pair continuous custom ad design sprints with your campaign management for full-funnel synergy.</span></div></div></div><a class="w-full py-3 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold text-center shadow-md hover:bg-secondary transition-all block mt-4" href="#audit-form">Scope Your Campaign</a></div><!-- Package 3: Custom Web Design & Client Portals --><div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"><div><div class="inline-flex px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold uppercase mb-4">Digital Hub &amp; Conversion</div><h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-2">Custom Web Design &amp; Client Portals</h3><div class="mb-3"><span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider block">Modular Project or Managed Build</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Fast, responsive websites engineered with speed, accessibility, and high conversion at their core—never off-the-shelf slow templates.</p><div class="space-y-3 font-body-sm text-body-sm mb-space-lg"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Modern custom design with sub-2 second load speeds (95+ Google PageSpeed)</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Self-service customer appointment scheduling &amp; booking engines</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Seamless bi-directional CRM integration (Jobber, Housecall Pro, Clio, HubSpot)</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Local SEO architecture &amp; structured schema markup</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check</span><span class="">Ongoing maintenance, security &amp; core web vitals optimization</span></div></div></div><a class="w-full py-3 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold text-center hover:bg-surface-container transition-all block mt-4" href="#audit-form">Request Website Scope</a></div></div><div class="mt-space-lg p-space-md rounded-xl bg-surface-container-high border border-surface-container text-on-surface flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">percent</span></div><div><span class="font-label-md text-label-md font-bold text-on-surface block">Bundle &amp; Save 15%</span><p class="font-body-sm text-body-sm text-on-surface-variant">Combine Web Design or Creative Production with Active Campaign Management for an integrated 15% multi-service discount. Custom proposals tailored without lock-in.</p></div></div><a class="px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold whitespace-nowrap text-center hover:bg-primary-container transition-colors shrink-0" href="#audit-form">Explore Multi-Service Bundle</a></div>
+</div>
+</section>
+<!-- SECTION 7: SIMPLE 4-STEP PROCESS (Sand/Cream Canvas #FDFBF7) -->
+<section class="w-full bg-[#FDFBF7] py-space-xl lg:py-24">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest font-extrabold">How We Work</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">From discovery call to live revenue in 30 days.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          No months of theoretical slide decks. We map your territory, build your conversion engine, and launch real campaigns with urgency. Not Satisfied? Our Service Contracts are renewed monthly with budgets confirmed, so you are never stuck.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-4">
+              01
             </div>
-            <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex flex-wrap items-center gap-2 mb-3">
-                  <span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Leadership Experience</span>
-                  <span class="text-tertiary font-label-sm text-label-sm font-bold">Cross-Platform Depth</span>
-                </div>
-                <div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">$200 to $2M+ / mo Managed</div>
-                <div class="font-body-sm text-body-sm text-on-surface-variant mb-4">From lean local service launches to multi-million dollar regional and national growth budgets, our frameworks eliminate wasted ad spend.</div>
-              </div>
-              <div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
-                <span class="">Senior Veteran Direction</span>
-                <span class="text-tertiary font-bold">20+ Yrs Combined</span>
-              </div>
-            </div>
-            <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex flex-wrap items-center gap-2 mb-3">
-                  <span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Niche KPI-Specifics</span>
-                  <span class="text-tertiary font-label-sm text-label-sm font-bold">Engineered Infrastructure</span>
-                </div>
-                <div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-1">+200% Conversion Lift</div>
-                <div class="font-body-sm text-body-sm text-on-surface-variant mb-4">Sub-2-second speed, streamlined mobile booking, and automated CRM integrations consistently outperform generic template sites.</div>
-              </div>
-              <div class="pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container">
-                <span class="">CRO &amp; Web Portals</span>
-                <span class="text-tertiary font-bold">Sub-2s Speed</span>
-              </div>
-            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">30-Min Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              We review your current margins, top-grossing service zip codes, historical ad waste, and primary competitor positions across your local market.
+            </p>
+</div>
+<div class="pt-4 text-outline font-label-sm text-label-sm font-semibold">
+            Day 1 · Direct Phone or Zoom
           </div>
-        </div>
-      </section>
-
-      <!-- SECTION 3: FULL SPECTRUM SERVICES -->
-      <section class="w-full bg-[#FAFAF9] py-space-xl lg:py-24">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-          <div class="text-center max-w-2xl mx-auto mb-space-xl">
-            <span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest font-extrabold">End-To-End Execution</span>
-            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">Four core growth pillars. Zero vendor juggling.</h2>
-            <p class="font-body-md text-body-md text-on-surface-variant mt-3">We bring engineering precision and clean aesthetics under one roof. No outsourcing overseas, no hand-waving consultants.</p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-4">
+              02
+            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">Blueprint &amp; Sprint</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Our studio develops high-converting ad angles, landing page wireframes, and sets up call-tracking infrastructure.
+            </p>
+</div>
+<div class="pt-4 text-outline font-label-sm text-label-sm font-semibold">
+            Days 2–7 · Rapid Assembly
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg">
-            <!-- Pillar 1 -->
-            <div class="rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
-              <div>
-                <div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[28px]">devices</span></div>
-                <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Pillar 01</span>
-                <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Custom Web &amp; Client Portals</h3>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Fast, responsive websites built with speed, accessibility, and high conversion at their core. Direct hookups to Jobber and Housecall Pro.</p>
-                <ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Sub-second page speeds (&lt; 95+ PageSpeed score)</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Self-service scheduling &amp; invoice portals</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Direct sync with major CRMs &amp; dispatch tools</span></li>
-                </ul>
-              </div>
-              <div class="pt-4 flex items-center justify-between border-t border-surface-container">
-                <span class="font-label-sm text-label-sm text-outline">Avg. build: 3-4 Weeks</span>
-                <a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">Explore Specs <span class="material-symbols-outlined text-[16px]">east</span></a>
-              </div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-4">
+              03
             </div>
-            <!-- Pillar 2 -->
-            <div class="rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
-              <div>
-                <div class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[28px]">palette</span></div>
-                <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Pillar 02</span>
-                <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Creative Design Studio</h3>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">High-converting creative assets crafted by professional senior designers who know what resonates with regional Southern audiences.</p>
-                <ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">High-CTR Meta &amp; TikTok video/static ad collateral</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Fleet vehicle wrap vector kits &amp; site signage</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Complete logo identity systems &amp; brand guidelines</span></li>
-                </ul>
-              </div>
-              <div class="pt-4 flex items-center justify-between border-t border-surface-container">
-                <span class="font-label-sm text-label-sm text-outline">100% Vector &amp; Print</span>
-                <a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">View Design Kit <span class="material-symbols-outlined text-[16px]">east</span></a>
-              </div>
-            </div>
-            <!-- Pillar 3 -->
-            <div class="rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
-              <div>
-                <div class="w-12 h-12 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[28px]">campaign</span></div>
-                <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Pillar 03</span>
-                <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Full-Funnel Paid Advertising</h3>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Capture high-intent searches the exact moment a hot water heater bursts or a client needs legal counsel. Hyper-targeted geographic campaigns.</p>
-                <ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Google Local Service Ads (Screened &amp; Guaranteed)</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Granular neighborhood zip-code geofencing</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Retargeting pools that re-engage lost visitors</span></li>
-                </ul>
-              </div>
-              <div class="pt-4 flex items-center justify-between border-t border-surface-container">
-                <span class="font-label-sm text-label-sm text-outline">Daily Bid Calibration</span>
-                <a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#audit-form">Explore Ads <span class="material-symbols-outlined text-[16px]">east</span></a>
-              </div>
-            </div>
-            <!-- Pillar 4 -->
-            <div class="rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
-              <div>
-                <div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[28px]">query_stats</span></div>
-                <span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Pillar 04</span>
-                <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1 mb-3">Down-Funnel Attribution</h3>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Stop guessing which marketing effort brings in the cash. Dynamic call tracking, recorded leads, form submission attribution, and live dashboards.</p>
-                <ul class="space-y-2 mb-space-md font-body-sm text-body-sm text-on-surface">
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Dynamic call tracking with lead audio recordings</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Clear cost-per-qualified-lead (CPQL) reporting</span></li>
-                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span><span class="">Automated weekly executive email summaries</span></li>
-                </ul>
-              </div>
-              <div class="pt-4 flex items-center justify-between border-t border-surface-container">
-                <span class="font-label-sm text-label-sm text-outline">Transparent Numbers</span>
-                <a class="font-label-md text-label-md text-primary font-bold hover:text-primary-container flex items-center gap-1" href="#analytics-demo">Live Demo Below <span class="material-symbols-outlined text-[16px]">east</span></a>
-              </div>
-            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">Launch &amp; Track</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Campaigns go live across Google Local and Meta channels. Your team receives private login access to our live client portal.
+            </p>
+</div>
+<div class="pt-4 text-outline font-label-sm text-label-sm font-semibold">
+            Days 8–14 · Campaign Go-Live
           </div>
-        </div>
-      </section>
-
-      <!-- SECTION 4: INTERACTIVE ANALYTICS DEMO -->
-      <section class="w-full bg-[#EFF6FF] py-space-xl lg:py-24" id="analytics-demo">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
-            <div>
-              <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider block mb-1">Transparent Reporting Infrastructure</span>
-              <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">Interactive Reporting: What We Track</h2>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-4">
+              04
             </div>
-            <div class="inline-flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm text-outline font-label-sm text-label-sm shrink-0">
-              <span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="">Sample Client Portal View</span>
-            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">Weekly Optimize</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              We prune bad keywords, review phone call recordings with your dispatch, and reallocate budget toward highest-margin jobs.
+            </p>
+</div>
+<div class="pt-4 text-outline font-label-sm text-label-sm font-semibold">
+            Ongoing · Continuous Growth
           </div>
-
-          <div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden border border-surface-container overflow-x-auto">
-             <!-- Dashboard header/filters simplified for code length context (retaining structure) -->
-            <div class="bg-[#F8FAFC] border-b border-surface-container px-4 py-3 flex flex-wrap items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-[14px] shadow-sm"><span class="material-symbols-outlined text-[20px]">bar_chart</span></div>
-                <div class="flex flex-col">
-                  <div class="flex flex-wrap items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-bold">AL &amp; MS Regional Performance</span><span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold text-[11px]">LIVE TEMPLATE</span></div>
-                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: INTERACTIVE AUDIT & CONSULTATION REQUEST FORM (White Canvas) -->
+<section class="w-full bg-surface-container-lowest py-space-xl lg:py-24" id="audit-form">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Form Left Info -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-extrabold">Ready To Grow?</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">Request your free Alabama &amp; Mississippi Growth Audit.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Within 24 business hours, our Viral Impressions senior team will deliver a comprehensive video breakdown showing where you are losing leads to competitors and how to capture them.
+          </p>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="font-title-lg text-title-lg text-on-surface font-bold">What is included in your free review:</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="">Industry landscape reporting and local heat map for your town</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="">Mobile speed &amp; friction analysis of your existing website</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="">Competitor ad spend estimate and missed search keyword gaps</span>
+</div>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<span class="material-symbols-outlined text-tertiary text-[24px]">verified</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<span class="font-bold block">100% Free &amp; Zero Obligation</span>
+              We do not share your contact info with third-party vendors or sales centers.
+            </div>
+</div>
+</div>
+<!-- Form Right Container Card -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl p-space-lg lg:p-space-xl">
+<form class="flex flex-col gap-4" id="growth-consultation-form" onsubmit="event.preventDefault(); document.getElementById('form-success-card').classList.remove('hidden'); this.classList.add('hidden');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Your Full Name *</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="John Miller" required="" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Company / Business Name *</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="Miller Services" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Current Website or Social URL</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="www.millerservices.com" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">AL &amp; MS Metro / Primary Market *</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" required="">
+<option value="">Select your market...</option>
+<option value="Birmingham">Birmingham / Central AL</option>
+<option value="Jackson">Jackson / Central MS</option>
+<option value="Huntsville">Huntsville / Madison / TN Valley AL</option>
+<option value="Gulfport-Biloxi">Gulfport &amp; Biloxi / MS Gulf Coast</option>
+<option value="Mobile">Mobile / Baldwin County AL</option>
+<option value="Tupelo">Tupelo / North MS</option>
+<option value="Hattiesburg">Hattiesburg / Pine Belt MS</option>
+<option value="Montgomery">Montgomery / River Region AL</option>
+<option value="Tuscaloosa">Tuscaloosa / West AL</option>
+<option value="Other">Other Alabama or Mississippi County</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Direct Phone Number *</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="(205) 555-0199" required="" type="tel">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Work Email Address *</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="john@millerservices.com" required="" type="email">
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Primary Growth Objective *</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+<input checked="" class="accent-primary" name="goal" type="radio" value="leads">
+<span class="">More Inbound Calls</span>
+</label>
+<label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+<input class="accent-primary" name="goal" type="radio" value="website">
+<span class="">Rebuild Website</span>
+</label>
+<label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+<input class="accent-primary" name="goal" type="radio" value="ads">
+<span class="">Lower Ad Costs</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Estimated Monthly Marketing Budget</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>$1,000 – $2,500 / mo</option>
+<option selected="">$2,500 – $5,000 / mo</option>
+<option>$5,000 – $10,000 / mo</option>
+<option>$10,000+ / mo</option>
+</select>
+</div>
+<button class="w-full mt-2 py-4 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-2" type="submit">
+<span class="">Send My Free Alabama &amp; Mississippi Growth Audit</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<div class="text-center font-label-sm text-label-sm text-outline mt-2">
+                Turnaround: Typically delivered under 24 business hours by our regional strategist.
               </div>
-            </div>
-            
-            <div class="p-4 lg:p-space-lg bg-[#FAFAF9]">
-              <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-space-lg">
-                <div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[11px] sm:text-[12px]">Qualified Inquiries</span></div><div class="font-headline-lg text-headline-lg text-on-surface font-extrabold my-1">164</div></div>
-                <div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[11px] sm:text-[12px]">CPA</span></div><div class="font-headline-lg text-headline-lg text-primary font-extrabold my-1">$18.40</div></div>
-                <div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[11px] sm:text-[12px]">Tracked Calls</span></div><div class="font-headline-lg text-headline-lg text-on-surface font-extrabold my-1">118</div></div>
-                <div class="p-4 rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-[11px] sm:text-[12px]">Pipeline ROAS</span></div><div class="font-headline-lg text-headline-lg text-tertiary font-extrabold my-1">4.8x</div></div>
+</form>
+<!-- Success State Message Card -->
+<div class="hidden text-center py-space-xl flex flex-col items-center" id="form-success-card">
+<div class="w-16 h-16 rounded-full bg-surface-container text-tertiary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Audit Request Received!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 mb-space-lg">
+                Thank you! Our Viral Impressions team has begun reviewing your domain and geographic territory. You'll receive your video breakdown and action plan shortly.
+              </p>
+<div class="p-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+                Need to speak directly with an advisor now? Call us at <strong class="text-primary">(205) 588-4100</strong>.
               </div>
-              <div class="rounded-lg bg-surface-container-lowest border border-surface-container shadow-sm overflow-hidden">
-                <div class="overflow-x-auto">
-                  <table class="w-full text-left font-body-sm text-body-sm min-w-[700px]">
-                    <thead class="bg-[#F1F5F9] border-b border-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider text-[11px]">
-                      <tr>
-                        <th class="py-3 px-4 font-bold">Time &amp; Source</th>
-                        <th class="py-3 px-4 font-bold">Caller Market</th>
-                        <th class="py-3 px-4 font-bold">Duration</th>
-                        <th class="py-3 px-4 font-bold">Intent Classification</th>
-                        <th class="py-3 px-4 font-bold">Est. Value</th>
-                        <th class="py-3 px-4 text-right font-bold">Pipeline Status</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-surface-container text-on-surface">
-                      <tr class="hover:bg-surface-container-low transition-colors">
-                        <td class="py-3 px-4 font-semibold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Yesterday, 02:14 PM</td>
-                        <td class="py-3 px-4 text-on-surface-variant">Tuscaloosa, AL</td>
-                        <td class="py-3 px-4 font-medium">6m 05s</td>
-                        <td class="py-3 px-4 font-semibold text-primary">HVAC Replacement</td>
-                        <td class="py-3 px-4 font-bold">$18,800</td>
-                        <td class="py-3 px-4 text-right"><span class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Contract Executed</span></td>
-                      </tr>
-                      <!-- Add more rows as needed but keeping it brief to ensure styling clarity -->
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION 5: WHY CHOOSE US -->
-      <section class="w-full bg-surface-container-lowest py-space-xl lg:py-24">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-          <div class="text-center max-w-2xl mx-auto mb-space-xl">
-            <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-extrabold">The Viral Impressions Difference</span>
-            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mt-1">Built to fix everything wrong with agency retainers.</h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg items-stretch">
-            <div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between">
-              <div>
-                <div class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-2 font-bold">Option A</div>
-                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Big Coastal Agency</h3>
-                <div class="space-y-3 font-body-sm text-body-sm mt-4">
-                  <div class="flex items-start gap-2 text-outline"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span><span>$6,000+ monthly minimums</span></div>
-                  <div class="flex items-start gap-2 text-outline"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span><span>Rigid 12-month lock-ins</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between">
-              <div>
-                <div class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-2 font-bold">Option B</div>
-                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Cheap Freelancer</h3>
-                <div class="space-y-3 font-body-sm text-body-sm mt-4">
-                  <div class="flex items-start gap-2 text-outline"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span><span>Unpredictable turnaround</span></div>
-                  <div class="flex items-start gap-2 text-outline"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span><span>No full-funnel tracking</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="p-space-lg rounded-xl bg-surface-container-high shadow-lg flex flex-col justify-between relative overflow-hidden">
-              <div class="absolute top-0 right-0 bg-secondary-container text-on-secondary px-3 py-1 rounded-bl-lg font-label-sm text-label-sm font-extrabold uppercase">Recommended</div>
-              <div>
-                <div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2 font-bold mt-4 md:mt-0">The Smart Choice</div>
-                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-extrabold">Viral Impressions</h3>
-                <div class="space-y-3 font-body-sm text-body-sm mt-4">
-                  <div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">Founders handle account</span></div>
-                  <div class="flex items-start gap-2 text-on-surface"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span class="font-semibold">Predictable month-to-month</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION 8: INTERACTIVE AUDIT REQUEST FORM -->
-      <section class="w-full bg-surface-container-lowest py-space-xl lg:py-24" id="audit-form">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
-            <div class="lg:col-span-5 flex flex-col gap-space-md">
-              <span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-extrabold">Ready To Grow?</span>
-              <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">Request your free Growth Audit.</h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">We'll review your territory and find the keyword gaps bleeding money to your competitors.</p>
-            </div>
-            <div class="lg:col-span-7">
-              <div class="bg-surface-container-lowest rounded-xl shadow-xl p-space-md sm:p-space-xl border border-surface-container">
-                <form class="flex flex-col gap-4" id="growth-consultation-form">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Your Full Name *</label>
-                      <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface focus:outline-none" placeholder="John Miller" required="" type="text">
-                    </div>
-                    <div>
-                      <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Company / Business Name *</label>
-                      <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface focus:outline-none" placeholder="Miller Services" required="" type="text">
-                    </div>
-                  </div>
-                  <button class="w-full mt-2 py-4 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold shadow-md hover:bg-secondary transition-all" type="button">
-                    Send My Free Growth Audit
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- FOOTER -->
-      <footer class="w-full bg-surface-container-low mt-auto">
-        <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg py-space-xl">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl">
-            <div class="lg:col-span-4 flex flex-col gap-space-md">
-              <div class="flex items-center gap-space-sm">
-                <span class="font-title-lg text-title-lg text-on-surface font-bold">Viral Impressions</span>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">We build conversion engines and verifiable revenue streams for hometown institutions.</p>
-            </div>
-            <div class="lg:col-span-3 flex flex-col gap-space-sm">
-              <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Core Capabilities</span>
-              <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Custom Web &amp; Portals</a>
-              <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Paid Social &amp; Search</a>
-            </div>
-            <div class="lg:col-span-5 flex flex-col gap-space-sm">
-              <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Direct Line</span>
-              <a class="font-title-lg text-title-lg text-primary font-bold hover:underline" href="tel:2055884100">(659) 231-0056</a>
-              <span class="font-body-sm text-body-sm text-on-surface-variant">team@viralimpressions.com</span>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </main>
-  
-  <script>
-    // Handles the toggling of the new Mobile Menu Overlay
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobile-menu');
-      const icon = document.getElementById('mobile-menu-icon');
-      
-      if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        menu.classList.add('flex');
-        icon.textContent = 'close';
-        document.body.style.overflow = 'hidden'; // Stop scrolling on background
-      } else {
-        menu.classList.add('hidden');
-        menu.classList.remove('flex');
-        icon.textContent = 'menu';
-        document.body.style.overflow = 'auto'; // Restore scrolling
-      }
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: FINAL CALL TO ACTION BANNER -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl lg:py-20 relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg text-center relative z-10 flex flex-col items-center">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/20 font-label-sm text-label-sm font-bold uppercase tracking-wider mb-4">
+        Local Partnership Guarantee
+      </span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-extrabold max-w-3xl leading-tight">
+        Ready to build an unstoppable local pipeline for your business?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mt-4 mb-space-lg">Partner with two seasoned veterans bringing 20+ years of digital marketing firepower to Alabama &amp; Mississippi small businesses.</p>
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<a class="px-space-xl py-4 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold shadow-lg hover:bg-secondary transition-all text-center w-full sm:w-auto" href="#audit-form">Schedule 30-Min Strategy Call</a>
+<a class="px-space-lg py-4 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-bold hover:bg-surface-container-high transition-all flex items-center justify-center gap-2 w-full sm:w-auto" href="tel:2055884100">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span class="">(205) 588-4100</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('mobile-menu-icon');
+    
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      menu.classList.add('flex');
+      icon.textContent = 'close';
+      document.body.style.overflow = 'hidden';
+    } else {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.textContent = 'menu';
+      document.body.style.overflow = 'auto';
     }
-  </script>
-</body>
-</html>
+  }
+
+  function updateSimulator(btn, channel) {
+    // Reset all buttons
+    const buttons = document.querySelectorAll('.sim-btn');
+    buttons.forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary');
+      b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+    });
+    // Active button
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+    btn.classList.add('bg-primary', 'text-on-primary');
+
+    const leadsEl = document.getElementById('stat-leads');
+    const cpaEl = document.getElementById('stat-cpa');
+    const callsEl = document.getElementById('stat-calls');
+    const roasEl = document.getElementById('stat-roas');
+    const tbody = document.getElementById('sim-table-body');
+
+    if (channel === 'google') {
+      leadsEl.textContent = '104 Leads';
+      cpaEl.textContent = '$16.20';
+      callsEl.textContent = '86 Calls';
+      roasEl.textContent = '5.4x ROAS';
+      tbody.innerHTML = `
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Today, 11:42 AM · Google LSA
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Jackson, MS (601)</td>
+          <td class="py-3 px-4">5m 48s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Commercial TPO Roof Leak</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$14,500</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Today, 09:15 AM · Local Pack
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Birmingham, AL (205)</td>
+          <td class="py-3 px-4">3m 12s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Residential Shingle Inspection</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$8,200</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span>
+          </td>
+        </tr>
+      `;
+    } else if (channel === 'meta') {
+      leadsEl.textContent = '38 Leads';
+      cpaEl.textContent = '$22.80';
+      callsEl.textContent = '19 Calls';
+      roasEl.textContent = '3.9x ROAS';
+      tbody.innerHTML = `
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            Yesterday, 04:30 PM · Meta Retarget
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Hattiesburg, MS (601)</td>
+          <td class="py-3 px-4">4m 02s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Gutter &amp; Storm Repair</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$3,100</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">Follow-Up Sent</span>
+          </td>
+        </tr>
+      `;
+    } else if (channel === 'seo') {
+      leadsEl.textContent = '22 Leads';
+      cpaEl.textContent = '$0.00 (Pure Organic)';
+      callsEl.textContent = '13 Calls';
+      roasEl.textContent = 'Infinite (Earned)';
+      tbody.innerHTML = `
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            2 Days Ago · Organic Map Pack
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Tuscaloosa, AL (205)</td>
+          <td class="py-3 px-4">6m 20s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Multi-Family HVAC Replacement</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$18,800</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Contract Executed</span>
+          </td>
+        </tr>
+      `;
+    } else {
+      leadsEl.textContent = '164 Leads';
+      cpaEl.textContent = '$18.40';
+      callsEl.textContent = '118 Calls';
+      roasEl.textContent = '4.8x ROAS';
+      tbody.innerHTML = `
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Today, 11:42 AM · Google LSA
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Jackson, MS (601)</td>
+          <td class="py-3 px-4">5m 48s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Commercial TPO Roof Leak</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$14,500</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Today, 09:15 AM · Local Pack
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Birmingham, AL (205)</td>
+          <td class="py-3 px-4">3m 12s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Residential Shingle Inspection</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$8,200</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Booked Estimate</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            Yesterday, 04:30 PM · Meta Retarget
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Hattiesburg, MS (601)</td>
+          <td class="py-3 px-4">4m 02s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Gutter &amp; Storm Repair</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$3,100</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">Follow-Up Sent</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Yesterday, 02:14 PM · Google LSA
+          </td>
+          <td class="py-3 px-4 text-on-surface-variant">Tuscaloosa, AL (205)</td>
+          <td class="py-3 px-4">6m 05s</td>
+          <td class="py-3 px-4 font-semibold text-primary">Multi-Family HVAC Replacement</td>
+          <td class="py-3 px-4 font-bold text-on-surface">$18,800</td>
+          <td class="py-3 px-4 text-right">
+            <span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">Contract Executed</span>
+          </td>
+        </tr>
+      `;
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low mt-auto"><div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Viral Impressions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm"><span class="font-title-lg text-title-lg text-on-surface font-bold">Viral Impressions</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">We build conversion engines, high-performing websites, and verifiable revenue streams for Alabama &amp; Mississippi hometown institutions and scaling regional enterprises.</p><div class="flex flex-wrap items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>No-Jargon Guarantee</span><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>30-Day Velocity Pilot</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Core Capabilities</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="custom-portals-and-web" href="#">Custom Web &amp; Portals</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="full-funnel-ads" href="#">Paid Social &amp; Search</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="creative-studio" href="#">Creative Studio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="transparent-roi" href="#">Multi-Touch Analytics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pricing" href="#">Transparent Retainers</a></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Regional Footprint</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="mb-2"><strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Alabama Markets</strong><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Decatur, Florence &amp; The Shoals, Auburn-Opelika</p></div><div class=""><strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Mississippi Markets</strong><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jackson, Gulfport, Biloxi, Hattiesburg, Tupelo, Oxford, Southaven, Starkville, Meridian</p></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Direct Line</span><a class="font-title-lg text-title-lg text-primary font-bold hover:underline" href="tel:2055884100">(659) 231-0056</a><span class="font-body-sm text-body-sm text-on-surface-variant">team@viralimpressions.com</span><div class="pt-space-md flex flex-col gap-2"><a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:text-primary-container transition-colors" data-path="client-portal-login" href="#"><span class="material-symbols-outlined text-[18px]">lock</span><span class="">Client Portal Login</span></a><div class="flex flex-col gap-1 mt-1"><label class="font-label-sm text-label-sm text-on-surface font-semibold">Client Dashboard Request</label><div class="flex items-center gap-1.5"><input type="email" placeholder="Client Dashboard Request" class="w-full px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none"><button type="button" class="px-2.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-colors shrink-0" title="Request Access"><span class="material-symbols-outlined text-[16px]">send</span></button></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-outline"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Viral Impressions. Built with pride in Alabama &amp; Mississippi. All rights reserved.</span><div class="flex items-center gap-space-lg font-body-sm text-body-sm"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="sitemap" href="#">Sitemap</a></div></div></div></footer></body></html>
+</script></main><footer class="w-full bg-surface-container-low mt-auto"><div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Viral Impressions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm"><span class="font-title-lg text-title-lg text-on-surface font-bold">Viral Impressions</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">We build conversion engines, high-performing websites, and verifiable revenue streams for Alabama &amp; Mississippi hometown institutions and scaling regional enterprises.</p><div class="flex flex-wrap items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>No-Jargon Guarantee</span><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>30-Day Velocity Pilot</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Core Capabilities</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="custom-portals-and-web" href="#">Custom Web &amp; Portals</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="full-funnel-ads" href="#">Paid Social &amp; Search</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="creative-studio" href="#">Creative Studio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="transparent-roi" href="#">Multi-Touch Analytics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pricing" href="#">Transparent Retainers</a></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Regional Footprint</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="mb-2"><strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Alabama Markets</strong><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Decatur, Florence &amp; The Shoals, Auburn-Opelika</p></div><div class=""><strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Mississippi Markets</strong><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jackson, Gulfport, Biloxi, Hattiesburg, Tupelo, Oxford, Southaven, Starkville, Meridian</p></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Direct Line</span><a class="font-title-lg text-title-lg text-primary font-bold hover:underline" href="tel:2055884100">(659) 231-0056</a><span class="font-body-sm text-body-sm text-on-surface-variant">team@viralimpressions.com</span><div class="pt-space-md flex flex-col gap-2"><a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:text-primary-container transition-colors" data-path="client-portal-login" href="#"><span class="material-symbols-outlined text-[18px]">lock</span><span class="">Client Portal Login</span></a><div class="flex flex-col gap-1 mt-1"><label class="font-label-sm text-label-sm text-on-surface font-semibold">Client Dashboard Request</label><div class="flex items-center gap-1.5"><input type="email" placeholder="Client Dashboard Request" class="w-full px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none"><button type="button" class="px-2.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-colors shrink-0" title="Request Access"><span class="material-symbols-outlined text-[16px]">send</span></button></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-outline"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Viral Impressions. Built with pride in Alabama &amp; Mississippi. All rights reserved.</span><div class="flex items-center gap-space-lg font-body-sm text-body-sm"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="sitemap" href="#">Sitemap</a></div></div></div></footer></body></html>
