@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Services | Viral Impressions | AL &amp; MS Small Business Marketing</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <style>
+    @layer base { 
+      html, body { margin: 0; padding: 0; } 
+      body { overscroll-behavior: none; } 
+      main > :first-child { margin-top: 0 !important; } 
+      main > :last-child { margin-bottom: 0 !important; } 
+    } 
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class", 
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed-dim": "#ffb5a0", background: "#faf8ff", "surface-dim": "#d2d9f4", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#862200", "on-secondary": "#ffffff", "error-container": "#ffdad6", "secondary-fixed": "#ffdbd1", tertiary: "#004e47", "tertiary-container": "#00685f", secondary: "#b02f00", "primary-fixed-dim": "#b7c4ff", "on-primary": "#ffffff", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#dae2fd", "on-tertiary-container": "#7be7d9", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "inverse-primary": "#b7c4ff", "surface-bright": "#faf8ff", "on-tertiary-fixed": "#00201d", outline: "#747686", "surface-container-highest": "#dae2fd", primary: "#0037b0", "on-primary-fixed": "#001551", "on-primary-fixed-variant": "#0039b5", "outline-variant": "#c4c5d7", "primary-fixed": "#dce1ff", "primary-container": "#1d4ed8", "on-secondary-container": "#541100", error: "#ba1a1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#3b0900", "inverse-surface": "#283044", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#005049", "secondary-container": "#ff5722", "on-surface-variant": "#434655", "on-tertiary": "#ffffff", surface: "#faf8ff", "tertiary-fixed-dim": "#6bd8cb", "surface-tint": "#2151da", "tertiary-fixed": "#89f5e7", "on-primary-container": "#cad3ff"
+          }, 
+          borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, 
+          spacing: {"space-md": "1rem", "gutter-lg": "2rem", "gutter-sm": "1rem", gutter: "1.5rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-lg": "3rem", margin: "1.5rem"}, 
+          fontFamily: {
+            "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Plus Jakarta Sans"], label: ["Plus Jakarta Sans"]
+          }, 
+          fontSize: {
+            "body-sm": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], 
+            "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], 
+            "headline-sm": ["20px", {lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600"}], 
+            "display-xl-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800"}], 
+            "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], 
+            "display-lg": ["44px", {lineHeight: "52px", letterSpacing: "-0.025em", fontWeight: "700"}], 
+            "body-lg": ["18px", {lineHeight: "28px", letterSpacing: "0em", fontWeight: "400"}], 
+            "display-lg-mobile": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], 
+            "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700"}], 
+            "headline-lg-mobile": ["24px", {lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700"}], 
+            "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], 
+            "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}], 
+            "body-md": ["16px", {lineHeight: "24px", letterSpacing: "0em", fontWeight: "400"}], 
+            "title-lg": ["18px", {lineHeight: "26px", letterSpacing: "0em", fontWeight: "600"}]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-full bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-md hidden flex-col pt-24 px-margin-sm pb-8 overflow-y-auto">
+  <nav class="flex flex-col gap-6 items-center text-center">
+    <a class="text-headline-md font-headline-md text-primary font-bold transition-colors" href="services.html" onclick="toggleMobileMenu()">Services</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="custom-portals-and-web.html" onclick="toggleMobileMenu()">Custom Portals &amp; Web</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="full-funnel-ads.html" onclick="toggleMobileMenu()">Full-Funnel Ads</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="transparent-roi.html" onclick="toggleMobileMenu()">Transparent ROI</a>
+    <a class="text-headline-md font-headline-md text-on-surface hover:text-primary transition-colors" href="pricing.html" onclick="toggleMobileMenu()">Pricing</a>
+    
+    <div class="w-16 border-t-2 border-surface-container-highest my-2"></div>
+    
+    <div class="flex flex-col gap-2">
+      <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Direct Access</span>
+      <a class="font-headline-md text-headline-md text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a>
+      <span class="font-label-sm text-label-sm text-outline flex items-center justify-center gap-space-xs mt-1">
+        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat
+      </span>
+    </div>
+    
+    <a class="mt-4 inline-flex items-center justify-center w-full max-w-xs px-space-lg py-4 bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary transition-all" href="#audit-form" onclick="toggleMobileMenu()">Get a Free Growth Audit</a>
+    
+    <a class="mt-2 inline-flex items-center justify-center w-full max-w-xs px-space-lg py-4 bg-surface-container text-on-surface rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-all" href="#" onclick="toggleMobileMenu()">
+      <span class="material-symbols-outlined text-primary text-[18px] mr-2">folder_shared</span> Client Services
+    </a>
+  </nav>
+</div>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+    <div class="h-20 flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md shrink-0">
+        <a class="flex items-center gap-space-sm group focus:outline-none" href="index.html">
+          <img alt="Viral Impressions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm">
+          <div class="flex flex-col">
+            <span class="font-title-lg text-title-lg text-on-surface tracking-tight leading-none group-hover:text-primary transition-colors">Viral Impressions</span>
+            <span class="text-[11px] font-normal leading-tight text-outline tracking-wider uppercase mt-0.5">Preservative <br>Restoration &amp; Design LLC</span>
+          </div>
+        </a>
+      </div>
+      
+      <nav class="hidden xl:flex items-center gap-space-sm">
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-primary font-bold bg-surface-container-high" href="services.html">Services</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" href="custom-portals-and-web.html">Custom Portals &amp; Web</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" href="full-funnel-ads.html">Full-Funnel Ads</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" href="transparent-roi.html">Transparent ROI</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" href="pricing.html">Pricing</a>
+      </nav>
+      
+      <div class="flex items-center gap-space-md shrink-0">
+        <div class="hidden md:flex flex-col items-end text-right">
+          <a class="font-label-md text-label-md text-on-surface hover:text-primary font-bold transition-colors" href="tel:2055884100">(659) 231-0056</a>
+          <span class="font-label-sm text-label-sm text-outline flex items-center gap-space-xs">
+            <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>8 AM - 8 PM Mon-Sat
+          </span>
+        </div>
+        <a class="hidden md:inline-flex items-center justify-center px-space-lg py-space-sm bg-secondary-container text-on-secondary rounded-full font-label-md text-label-md shadow-[0_4px_14px_rgba(255,87,34,0.3)] hover:bg-secondary hover:text-on-secondary transition-all transform hover:-translate-y-0.5 active:translate-y-0" href="#audit-form">Get a Free Growth Audit</a>
+        <a class="hidden sm:inline-flex focus:outline-none items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all border border-surface-container-highest" href="#" title="Client Services &amp; Shared Drives">
+          <span class="material-symbols-outlined text-primary text-[18px]">folder_shared</span>
+          <span class="hidden sm:inline font-semibold text-primary">Client Services</span>
+        </a>
+        <button onclick="toggleMobileMenu()" class="xl:hidden p-2 text-on-surface hover:bg-surface-container-low rounded-md transition-colors focus:outline-none">
+          <span id="mobile-menu-icon" class="material-symbols-outlined text-[28px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="flex-1 w-full pt-20 bg-background">
+  <div class="flex flex-col w-full">
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full bg-surface-container-lowest overflow-hidden py-space-xl lg:py-20 border-b border-surface-container">
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#0037b0 1px, transparent 1px); background-size: 24px 24px;"></div>
+      <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg relative z-10">
+        <div class="max-w-3xl flex flex-col gap-space-md">
+          <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high w-fit">
+            <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">FULL-SPECTRUM MARKETING SERVICES</span>
+          </div>
+          <h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight leading-[1.08]">
+            Integrated marketing capabilities engineered for local market dominance.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            From high-converting web applications to hyper-targeted local ad engines and print graphics, we deliver every capability needed to scale your business across Alabama and Mississippi.
+          </p>
+          <div class="flex flex-wrap items-center gap-space-md pt-2">
+            <a href="#audit-form" class="px-space-xl py-4 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold shadow-md hover:bg-secondary transition-all flex items-center gap-2">
+              <span>Request A Free Growth Audit</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+            <a href="#all-services" class="px-space-lg py-4 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-high transition-all">
+              Explore Capability Pillars
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICE PILLARS -->
+    <section id="all-services" class="w-full py-space-xl lg:py-24 bg-background">
+      <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg flex flex-col gap-16">
+        
+        <!-- Pillar 01: Custom Web & Portals -->
+        <div class="rounded-2xl bg-surface-container-lowest p-space-xl lg:p-12 shadow-sm border border-surface-container grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[28px]">devices</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Capability Pillar 01</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Custom Web Design &amp; Client Portals</h2>
+              </div>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Generic off-the-shelf site builders cost you thousands in missed sales due to slow load times and confusing navigation. We engineer custom web systems designed to loads under 2 seconds on mobile networks while seamlessly connecting to your operational backend.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Self-Service Portals</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Client scheduling, online invoice payment, and service status tracking.</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">CRM Integrations</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Instant lead sync with Jobber, Housecall Pro, Clio, and HubSpot.</span>
+              </div>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="custom-portals-and-web.html" class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+                Deep Dive into Web Portals <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+              <span class="text-outline">•</span>
+              <a href="#audit-form" class="font-label-md text-label-md text-secondary-container font-bold hover:underline">Get Web Proposal</a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 bg-surface-container-low p-6 rounded-xl border border-surface-container flex flex-col gap-4">
+            <h3 class="font-title-lg text-title-lg text-on-surface font-bold">Included Web Deliverables:</h3>
+            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Sub-second page loading speed optimization</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Mobile-first UX structure &amp; click-to-call bars</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Localized SEO schema &amp; Google Map integration</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>ADA Accessibility &amp; SSL Security compliance</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 02: Creative Design Studio -->
+        <div class="rounded-2xl bg-surface-container-lowest p-space-xl lg:p-12 shadow-sm border border-surface-container grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[28px]">palette</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Capability Pillar 02</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Creative Design Studio</h2>
+              </div>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Professional graphic design builds immediate trust before your phone ever rings. Our design studio crafts everything from high-converting social media ad sets to fleet vehicle wraps and printed job site signage tailored to Southern markets.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Ad Collateral Sprints</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">High-CTR video and static image assets for Meta, TikTok &amp; YouTube.</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Fleet &amp; Site Signage</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">100% print-ready vector wrap templates and yard signs.</span>
+              </div>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="#audit-form" class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+                Request Design Kit <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 bg-surface-container-low p-6 rounded-xl border border-surface-container flex flex-col gap-4">
+            <h3 class="font-title-lg text-title-lg text-on-surface font-bold">Included Creative Deliverables:</h3>
+            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Complete logo identity systems &amp; brand books</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>High-turnaround ad graphic production</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Vehicle wraps, uniforms, and sales brochures</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Full ownership of vector source files</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 03: Full-Funnel Paid Ads -->
+        <div class="rounded-2xl bg-surface-container-lowest p-space-xl lg:p-12 shadow-sm border border-surface-container grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[28px]">campaign</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Capability Pillar 03</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Full-Funnel Paid Advertising</h2>
+              </div>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Stop throwing budget at generic boost posts. We build high-intent paid ad engines across Google Search, Google LSA (Local Service Ads), and Meta with tight zip-code targeting and active bid management.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Google Screened / LSA</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Pay only for actual verified phone calls from interested local customers.</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Zip-Code Geofencing</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Target high-income neighborhoods and primary service corridors.</span>
+              </div>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="full-funnel-ads.html" class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+                Explore Paid Ad Systems <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+              <span class="text-outline">•</span>
+              <a href="#audit-form" class="font-label-md text-label-md text-secondary-container font-bold hover:underline">Get Ad Audit</a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 bg-surface-container-low p-6 rounded-xl border border-surface-container flex flex-col gap-4">
+            <h3 class="font-title-lg text-title-lg text-on-surface font-bold">Included Ad Management:</h3>
+            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Daily negative keyword pruning to eliminate waste</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Multi-channel retargeting pixel setup</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Direct phone call audio recording verification</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>No minimum spend lock-in terms</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 04: Down-Funnel Attribution -->
+        <div class="rounded-2xl bg-surface-container-lowest p-space-xl lg:p-12 shadow-sm border border-surface-container grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[28px]">query_stats</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Capability Pillar 04</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Down-Funnel Attribution &amp; Analytics</h2>
+              </div>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              You shouldn’t need a degree in data science to know if your marketing is working. We set up dynamic phone number insertion, lead audio recording, and live revenue dashboards so you know exactly what every ad dollar produces.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Dynamic Call Tracking</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Trace every call back to the exact keyword and ad source.</span>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container">
+                <span class="font-label-md text-label-md text-on-surface font-bold block mb-1">Live Executive Portal</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Auto-updating report with Cost-Per-Acquisition and ROAS.</span>
+              </div>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="transparent-roi.html" class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+                Explore Live Demo <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 bg-surface-container-low p-6 rounded-xl border border-surface-container flex flex-col gap-4">
+            <h3 class="font-title-lg text-title-lg text-on-surface font-bold">Included Analytics Deliverables:</h3>
+            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Call recording &amp; lead intent tagging</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>Weekly automated email summary reports</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>CRM pipeline revenue match-back setup</span></li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span><span>100% HIPAA &amp; Privacy compliant setup</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT / AUDIT FORM SECTION -->
+    <section class="w-full bg-surface-container-lowest py-space-xl lg:py-24 border-t border-surface-container" id="audit-form">
+      <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+          <div class="lg:col-span-5 flex flex-col gap-space-md">
+            <span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-extrabold">Ready To Scope Your Project?</span>
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">Request your free Alabama &amp; Mississippi Growth Audit.</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Within 24 business hours, our Viral Impressions senior team will deliver a comprehensive video breakdown showing where you are losing leads to competitors and how to capture them.
+            </p>
+            <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-3">
+              <div class="font-title-lg text-title-lg text-on-surface font-bold">What is included in your free review:</div>
+              <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+                <span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+                <span>Industry landscape reporting and local heat map for your town</span>
+              </div>
+              <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+                <span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+                <span>Mobile speed &amp; friction analysis of your existing website</span>
+              </div>
+              <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+                <span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+                <span>Competitor ad spend estimate and missed search keyword gaps</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 pt-2">
+              <span class="material-symbols-outlined text-tertiary text-[24px]">verified</span>
+              <div class="font-body-sm text-body-sm text-on-surface">
+                <span class="font-bold block">100% Free &amp; Zero Obligation</span>
+                We do not share your contact info with third-party vendors or sales centers.
+              </div>
+            </div>
+          </div>
+          
+          <div class="lg:col-span-7">
+            <div class="bg-surface-container-lowest rounded-xl shadow-xl p-space-lg lg:p-space-xl border border-surface-container">
+              <form class="flex flex-col gap-4" id="growth-consultation-form" onsubmit="event.preventDefault(); document.getElementById('form-success-card').classList.remove('hidden'); this.classList.add('hidden');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Your Full Name *</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="John Miller" required="" type="text">
+                  </div>
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Company / Business Name *</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="Miller Services" required="" type="text">
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Current Website or Social URL</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="www.millerservices.com" type="text">
+                  </div>
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">AL &amp; MS Metro / Primary Market *</label>
+                    <select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" required="">
+                      <option value="">Select your market...</option>
+                      <option value="Birmingham">Birmingham / Central AL</option>
+                      <option value="Jackson">Jackson / Central MS</option>
+                      <option value="Huntsville">Huntsville / Madison / TN Valley AL</option>
+                      <option value="Gulfport-Biloxi">Gulfport &amp; Biloxi / MS Gulf Coast</option>
+                      <option value="Mobile">Mobile / Baldwin County AL</option>
+                      <option value="Tupelo">Tupelo / North MS</option>
+                      <option value="Hattiesburg">Hattiesburg / Pine Belt MS</option>
+                      <option value="Montgomery">Montgomery / River Region AL</option>
+                      <option value="Tuscaloosa">Tuscaloosa / West AL</option>
+                      <option value="Other">Other Alabama or Mississippi County</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Direct Phone Number *</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="(205) 555-0199" required="" type="tel">
+                  </div>
+                  <div>
+                    <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Work Email Address *</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="john@millerservices.com" required="" type="email">
+                  </div>
+                </div>
+                <div>
+                  <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Primary Growth Objective *</label>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    <label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+                      <input checked="" class="accent-primary" name="goal" type="radio" value="leads">
+                      <span>More Inbound Calls</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+                      <input class="accent-primary" name="goal" type="radio" value="website">
+                      <span>Rebuild Website</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container text-on-surface font-body-sm text-body-sm">
+                      <input class="accent-primary" name="goal" type="radio" value="ads">
+                      <span>Lower Ad Costs</span>
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label class="block font-label-sm text-label-sm text-on-surface font-bold mb-1">Estimated Monthly Marketing Budget</label>
+                  <select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none">
+                    <option>$1,000 – $2,500 / mo</option>
+                    <option selected="">$2,500 – $5,000 / mo</option>
+                    <option>$5,000 – $10,000 / mo</option>
+                    <option>$10,000+ / mo</option>
+                  </select>
+                </div>
+                <button class="w-full mt-2 py-4 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md font-bold shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-2" type="submit">
+                  <span>Send My Free Alabama &amp; Mississippi Growth Audit</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+                <div class="text-center font-label-sm text-label-sm text-outline mt-2">
+                  Turnaround: Typically delivered under 24 business hours by our regional strategist.
+                </div>
+              </form>
+              <div class="hidden text-center py-space-xl flex flex-col items-center" id="form-success-card">
+                <div class="w-16 h-16 rounded-full bg-surface-container text-tertiary flex items-center justify-center mb-space-md">
+                  <span class="material-symbols-outlined text-[36px]">check_circle</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Audit Request Received!</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 mb-space-lg">
+                  Thank you! Our Viral Impressions team has begun reviewing your domain and geographic territory. You'll receive your video breakdown and action plan shortly.
+                </p>
+                <div class="p-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+                  Need to speak directly with an advisor now? Call us at <strong class="text-primary">(205) 588-4100</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-surface-container-low mt-auto">
+  <div class="max-w-[1200px] mx-auto px-margin-sm lg:px-margin-lg py-space-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl">
+      <div class="lg:col-span-4 flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm">
+          <img alt="Viral Impressions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEemvfOJtvETB2IQ6uvEzmhMOzBbxD_E7ZltxVjqHbD-1VLg1oabGyeLoY6DiTJOqXe4tvUGDTYlcCjwHybe59V7EObZzBwH4OtnRefvePg-L4_7UskQkwOkU5Am2RakA8ZEo7Hvlc1o0xWz0pYg4IXI6KkXbJKaPDr9WbxreKGrsvs8PQ7W7WlRGPKV3Sd3MbHbTPxii78YiiKDqwUYjrW81LoM60Tg0aif2HfgvWSl4UwAjWazm">
+          <span class="font-title-lg text-title-lg text-on-surface font-bold">Viral Impressions</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">We build conversion engines, high-performing websites, and verifiable revenue streams for Alabama &amp; Mississippi hometown institutions and scaling regional enterprises.</p>
+        <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+          <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>No-Jargon Guarantee</span>
+          <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>30-Day Velocity Pilot</span>
+        </div>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-sm">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Core Capabilities</span>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="custom-portals-and-web.html">Custom Web &amp; Portals</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="full-funnel-ads.html">Paid Social &amp; Search</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="services.html">Creative Studio</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="transparent-roi.html">Multi-Touch Analytics</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="pricing.html">Transparent Retainers</a>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-sm">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Regional Footprint</span>
+        <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <div class="mb-2">
+            <strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Alabama Markets</strong>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Decatur, Florence &amp; The Shoals, Auburn-Opelika</p>
+          </div>
+          <div>
+            <strong class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Mississippi Markets</strong>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jackson, Gulfport, Biloxi, Hattiesburg, Tupelo, Oxford, Southaven, Starkville, Meridian</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-2 flex flex-col gap-space-sm">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-xs">Direct Line</span>
+        <a class="font-title-lg text-title-lg text-primary font-bold hover:underline" href="tel:2055884100">(659) 231-0056</a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">team@viralimpressions.com</span>
+        <div class="pt-space-md flex flex-col gap-2">
+          <a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:text-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">lock</span><span>Client Portal Login</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-outline">
+      <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Viral Impressions. Built with pride in Alabama &amp; Mississippi. All rights reserved.</span>
+      <div class="flex items-center gap-space-lg font-body-sm text-body-sm">
+        <a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+        <a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+        <a class="hover:text-on-surface transition-colors" href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('mobile-menu-icon');
+    
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      menu.classList.add('flex');
+      icon.textContent = 'close';
+      document.body.style.overflow = 'hidden';
+    } else {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.textContent = 'menu';
+      document.body.style.overflow = 'auto';
+    }
+  }
+</script>
+
+</body>
+</html>
