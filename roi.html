@@ -361,4 +361,209 @@
 
           <article class="p-8 rounded-2xl bg-white text-slate-900 border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-
+              <div class="w-12 h-12 rounded-xl bg-emerald-400 text-slate-900 border-2 border-slate-900 flex items-center justify-center font-black mb-5" aria-hidden="true">
+                <span class="material-symbols-outlined text-[26px]">mark_email_read</span>
+              </div>
+              <h3 class="text-xl font-extrabold mb-3">Plain-English Reporting</h3>
+              <p class="text-sm font-medium text-slate-600 leading-relaxed">No logging into confusing dashboards. We send an automated weekly executive summary straight to your inbox showing brand reach alongside hard lead metrics.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / AUDIT FORM SECTION -->
+    <section class="w-full bg-[#FAF8FF] py-16 lg:py-24 border-b-2 border-slate-900" id="audit-form" aria-labelledby="form-heading">
+      <div class="max-w-[1200px] mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-5 flex flex-col gap-5">
+            <span class="text-xs font-black text-orange-600 uppercase tracking-widest block">Start Tracking Truth</span>
+            <h2 id="form-heading" class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Request your free Marketing ROI Audit.</h2>
+            <p class="text-sm font-medium text-slate-600 leading-relaxed">
+              Stop guessing. Within 24 business hours, our partners will review your current digital setup and show you exactly where you're flying blind.
+            </p>
+            
+            <ul class="p-5 rounded-2xl bg-white border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] flex flex-col gap-3" aria-label="Audit Features List">
+              <li class="font-extrabold text-sm text-slate-900">What is included in your free review:</li>
+              <li class="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <span class="material-symbols-outlined text-emerald-600 text-[18px]" aria-hidden="true">check_circle</span>
+                <span>Review of your current digital lead tracking</span>
+              </li>
+              <li class="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <span class="material-symbols-outlined text-emerald-600 text-[18px]" aria-hidden="true">check_circle</span>
+                <span>Identification of untracked brand awareness channels</span>
+              </li>
+              <li class="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <span class="material-symbols-outlined text-emerald-600 text-[18px]" aria-hidden="true">check_circle</span>
+                <span>Custom proposal for end-to-end attribution setup</span>
+              </li>
+            </ul>
+            
+            <div class="flex items-start gap-3 pt-2">
+              <span class="material-symbols-outlined text-emerald-600 text-[24px]" aria-hidden="true">verified</span>
+              <p class="text-xs font-medium text-slate-700">
+                <strong class="font-extrabold block text-slate-900">100% Free &amp; Zero Obligation</strong>
+                We do not share your contact information with third-party callers.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-slate-900 shadow-[6px_6px_0px_0px_#0f172a]">
+              <form class="flex flex-col gap-4" id="growth-consultation-form" aria-label="ROI Tracking Consultation Request" onsubmit="event.preventDefault(); document.getElementById('form-success-card').classList.remove('hidden'); this.classList.add('hidden');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="full-name" class="block text-xs font-extrabold text-slate-900 mb-1">Your Full Name *</label>
+                    <input id="full-name" name="name" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" placeholder="John Miller" required type="text">
+                  </div>
+                  <div>
+                    <label for="company-name" class="block text-xs font-extrabold text-slate-900 mb-1">Company / Business Name *</label>
+                    <input id="company-name" name="company" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" placeholder="Miller Services" required type="text">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="url" class="block text-xs font-extrabold text-slate-900 mb-1">Current Website URL</label>
+                    <input id="url" name="website" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" placeholder="www.millerservices.com" type="text">
+                  </div>
+                  <div>
+                    <label for="market" class="block text-xs font-extrabold text-slate-900 mb-1">AL &amp; MS Metro / Market *</label>
+                    <select id="market" name="market" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" required>
+                      <option value="">Select your market...</option>
+                      <option value="Birmingham">Birmingham / Central AL</option>
+                      <option value="Jackson">Jackson / Central MS</option>
+                      <option value="Huntsville">Huntsville / Madison AL</option>
+                      <option value="Gulfport-Biloxi">Gulfport &amp; Biloxi / MS Coast</option>
+                      <option value="Mobile">Mobile / Baldwin County AL</option>
+                      <option value="Tupelo">Tupelo / North MS</option>
+                      <option value="Hattiesburg">Hattiesburg / Pine Belt MS</option>
+                      <option value="Other">Other AL or MS Area</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="phone" class="block text-xs font-extrabold text-slate-900 mb-1">Direct Phone Number *</label>
+                    <input id="phone" name="phone" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" placeholder="(205) 555-0199" required type="tel">
+                  </div>
+                  <div>
+                    <label for="email" class="block text-xs font-extrabold text-slate-900 mb-1">Work Email Address *</label>
+                    <input id="email" name="email" class="w-full px-4 py-3 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-medium text-slate-900 focus:outline-none focus:border-blue-600" placeholder="john@millerservices.com" required type="email">
+                  </div>
+                </div>
+
+                <fieldset>
+                  <legend class="block text-xs font-extrabold text-slate-900 mb-1">Primary Growth Objective *</legend>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-100 border border-slate-300 cursor-pointer text-xs font-bold text-slate-800 hover:border-slate-500 transition-colors">
+                      <input class="accent-blue-600 w-4 h-4" name="goal" type="radio" value="leads">
+                      <span>Generate Digital Leads</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-100 border border-slate-300 cursor-pointer text-xs font-bold text-slate-800 hover:border-slate-500 transition-colors">
+                      <input class="accent-blue-600 w-4 h-4" name="goal" type="radio" value="website">
+                      <span>Rebuild Website</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-100 border border-slate-300 cursor-pointer text-xs font-bold text-slate-800 hover:border-slate-500 transition-colors">
+                      <input checked class="accent-blue-600 w-4 h-4" name="goal" type="radio" value="ads">
+                      <span>Lower Ad Costs</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <button class="w-full mt-2 py-4 rounded-xl bg-orange-500 text-white font-black text-sm border-2 border-slate-900 shadow-[3px_3px_0px_0px_#0f172a] hover:bg-orange-600 transition-all flex items-center justify-center gap-2 focus:ring-4 focus:ring-orange-300 outline-none" type="submit">
+                  <span>Send My Free ROI Setup Plan</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </button>
+              </form>
+
+              <!-- Form Success Card -->
+              <div class="hidden text-center py-8 flex flex-col items-center" id="form-success-card" role="alert" aria-live="polite">
+                <div class="w-16 h-16 rounded-2xl bg-emerald-100 border-2 border-slate-900 shadow-[3px_3px_0px_0px_#0f172a] text-emerald-800 flex items-center justify-center mb-4" aria-hidden="true">
+                  <span class="material-symbols-outlined text-[36px]">check_circle</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900">Request Received!</h3>
+                <p class="text-xs font-medium text-slate-600 max-w-md mt-2 mb-6">
+                  Thank you! Our Viral Impressions team will deliver your custom analytics breakdown shortly.
+                </p>
+                <div class="p-4 rounded-xl bg-slate-100 border-2 border-slate-900 text-xs font-bold text-slate-800">
+                  Need to speak directly now? Call us at <a href="tel:6592310056" class="text-blue-600 font-extrabold underline">(659) 231-0056</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-slate-900 text-white mt-auto" role="contentinfo">
+  <div class="max-w-[1200px] mx-auto px-4 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+      
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-blue-600 border border-white flex items-center justify-center text-white font-black text-xs" aria-hidden="true">VI</div>
+          <span class="font-extrabold text-lg text-white">Viral Impressions</span>
+        </div>
+        <p class="text-xs text-slate-400 max-w-sm leading-relaxed">We build custom web portals, high-converting ad engines, and verifiable revenue streams for Alabama &amp; Mississippi small businesses.</p>
+      </div>
+
+      <nav class="lg:col-span-3 flex flex-col gap-2" aria-label="Footer Services Navigation">
+        <span class="text-xs font-black text-amber-400 uppercase tracking-wider mb-2">Core Capabilities</span>
+        <a class="text-xs text-slate-300 hover:text-white transition-colors" href="customportals.html">Custom Web &amp; Portals</a>
+        <a class="text-xs text-slate-300 hover:text-white transition-colors" href="ads.html">Paid Social &amp; Search Ads</a>
+        <a class="text-xs text-slate-300 hover:text-white transition-colors" href="services.html">Creative Design Studio</a>
+        <a class="text-xs text-slate-300 hover:text-white transition-colors" href="roi.html">Call &amp; Revenue Reports</a>
+        <a class="text-xs text-slate-300 hover:text-white transition-colors" href="pricing.html">Transparent Retainers</a>
+      </nav>
+
+      <address class="lg:col-span-5 flex flex-col gap-2 not-italic">
+        <span class="text-xs font-black text-amber-400 uppercase tracking-wider mb-2">Direct Line</span>
+        <a class="text-xl font-extrabold text-blue-400 hover:underline" href="tel:6592310056" aria-label="Call Viral Impressions at 659-231-0056">(659) 231-0056</a>
+        <a class="text-xs text-slate-400 hover:text-white" href="mailto:team@viralimpressions.com">team@viralimpressions.com</a>
+        <div class="pt-2 text-xs text-slate-400 leading-relaxed">
+          <strong class="text-slate-300">Alabama Markets:</strong> Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa<br>
+          <strong class="text-slate-300">Mississippi Markets:</strong> Jackson, Gulfport, Biloxi, Hattiesburg, Tupelo
+        </div>
+      </address>
+
+    </div>
+
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <span>© 2026 Viral Impressions LLC. Built in Alabama &amp; Mississippi. All rights reserved.</span>
+      <div class="flex items-center gap-6">
+        <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+        <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('mobile-menu-icon');
+    
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      menu.classList.add('flex');
+      icon.textContent = 'close';
+      document.body.style.overflow = 'hidden';
+    } else {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.textContent = 'menu';
+      document.body.style.overflow = 'auto';
+    }
+  }
+</script>
+
+</body>
+</html>
